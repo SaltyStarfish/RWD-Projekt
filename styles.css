@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
   }
   
 body {
@@ -12,19 +13,34 @@ body {
     color: #333;
   }
 
-  h1, h2 {
+  h1, h2, h3, h4{
     font-family: "museo-slab-rounded", sans-serif;
-    font-weight: 1000;
     font-style: normal;
   }
-  
+
+  h1, h2{
+    font-weight: 1000;
+  }
+
   p {
     font-family: "neue-kabel", sans-serif;
     font-weight: 400;
     font-style: normal;
 
   }
-  
+
+  a{
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+  }
+
+  a:hover {
+    color: #E38A2F;
+  }
+
+/*-------------------Header---------------------------*/
+
   header {
     position: sticky;
     top: 0;
@@ -40,7 +56,7 @@ body {
   }
 
   .navbar a:hover {
-    color: #E38A2F;
+    font-weight: 800;
 }
   
   .kreuzbar {
@@ -68,7 +84,10 @@ body {
     width: 24px;
     height: auto;
   }
+ 
   
+/*--------------------------Main----------------------------------*/
+
   .hero {
     width: 100%;
     margin: 0;
@@ -76,7 +95,7 @@ body {
   
   .status {
     background-color: #F3C846;
-    color: 22527A;
+    color: #22527A;
     text-align: center;
     padding: 10px 0;
   }
@@ -88,11 +107,11 @@ body {
     padding: 2em 0;
   }
   
-  .buttons button {
+  .buttons a {
     background-color: #22527A;
     color: white;
     font-family: "museo-slab-rounded", sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.2em;
     padding: 0.8em 2em;
@@ -101,12 +120,16 @@ body {
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   }
+
+  .buttons a:hover{
+    font-weight: 900;
+  }
   
   .box {
     display: flex;
     background-color: white;
     margin: 2em auto;
-    max-width: 900px;
+    max-width: 1000px;
     border-radius: 2em 0 2em 0;
     overflow: hidden;
     border: 3px solid #F3C846;
@@ -116,7 +139,8 @@ body {
     flex: 1;
     background-color: #D94D34;
     color: white;
-    padding: 5em;
+    padding: 4em;
+    max-width: 50%;
   }
 
   .welcome h2 {
@@ -129,6 +153,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 50%;
   }
   
   .logo img {
@@ -136,4 +161,39 @@ body {
     height: auto;
     max-width: 300px;
   }
-  
+
+/*-----------------------Footer----------------------------------*/
+
+footer{
+  justify-content: center;
+  height: 300px;
+  bottom: 0;
+  background-color: #22527A;
+  z-index: 1000;
+  align-content: center;
+}
+
+#footercontent{
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+
+}
+
+#footercontent > div{
+  display: block;
+  width: 25%;
+  justify-content: space-between;
+  padding: 0 25px;
+  color: #ffffff;
+}
+
+#map{
+  border: solid #ffffff 10px;
+  max-width: 100%;
+}
+
+#some img{
+  display: inline;
+  max-width: 30px;
+}
