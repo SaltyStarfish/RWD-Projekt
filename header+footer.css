@@ -1,0 +1,84 @@
+@import url("https://use.typekit.net/xqb5zhb.css");
+
+/*-------------------Header---------------------------*/
+
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #22527A;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+  }
+
+  .navbar a:hover {
+    font-weight: 800;
+}
+  
+  .kreuzbar {
+    color: #D94D34;
+    font-family: "museo-slab-rounded", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 2em;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3.5em;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "museo-slab-rounded", sans-serif;
+    font-weight: 700;
+  }
+  
+  .flag-icon {
+    width: 24px;
+    height: auto;
+  }
+ 
+
+/*-----------------------Footer----------------------------------*/
+
+footer{
+  justify-content: center;
+  height: 300px;
+  bottom: 0;
+  background-color: #22527A;
+  z-index: 1000;
+  align-content: center;
+}
+
+#footercontent{
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+
+}
+
+#footercontent > div{
+  display: block;
+  width: 25%;
+  justify-content: space-between;
+  padding: 0 25px;
+  color: #ffffff;
+}
+
+#map{
+  border: solid #ffffff 10px;
+  max-width: 100%;
+}
+
+#some img{
+  display: inline;
+  max-width: 30px;
+}
