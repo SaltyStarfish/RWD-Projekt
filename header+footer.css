@@ -45,6 +45,48 @@
     width: 24px;
     height: auto;
   }
+
+/*-------------------Header---------------------------*/
+
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #22527A;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+  }
+  
+  .kreuzbar {
+    color: #D94D34;
+    font-family: "museo-slab-rounded", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 2em;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3.5em;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "museo-slab-rounded", sans-serif;
+    font-weight: 700;
+  }
+  
+  .flag-icon {
+    width: 24px;
+    height: auto;
+  }
  
 
 /*-----------------------Footer----------------------------------*/
