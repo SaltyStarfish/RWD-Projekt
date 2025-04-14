@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.22 12.55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d94e33;
+        font-family: MuseoSlabRounded-900, 'Museo Slab Rounded';
+        font-size: 11px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-1" transform="translate(0 10.02)"><tspan x="0" y="0">KREUZ</tspan><tspan class="cls-2" x="38.77" y="0">B</tspan><tspan x="46.08" y="0">ÄR</tspan></text>
+  </g>
+</svg>
