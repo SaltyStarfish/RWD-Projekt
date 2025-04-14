@@ -46,47 +46,58 @@
     height: auto;
   }
 
-/*-------------------Header---------------------------*/
+    /*----------Dropdown----------------*/
 
-  header {
-    position: sticky;
-    top: 0;
-    background-color: #22527A;
-    z-index: 1000;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 2em;
-  }
-  
-  .kreuzbar {
-    color: #D94D34;
-    font-family: "museo-slab-rounded", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-    font-size: 2em;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 3.5em;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: white;
-    font-family: "museo-slab-rounded", sans-serif;
-    font-weight: 700;
-  }
-  
-  .flag-icon {
-    width: 24px;
-    height: auto;
-  }
+.nav_links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav_links > li {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav_links a {
+  display: block;
+  text-align: left;
+  padding: 10px 0px;
+}
+
+.menu {
+  list-style: none;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  width: 200px;
+  display: none;
+  border-radius: 15px;
+}
+
+.menu li {
+  width: 100%;
+}
+
+.menu a {
+  padding: 10px;
+  color: #E38A2F;
+  background-color: white;
+  border: 1px solid #E38A2F;
+  font-family: "museo-slab-rounded", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.dropdown:hover > .menu {
+  display: block;
+}
  
 
 /*-----------------------Footer----------------------------------*/
