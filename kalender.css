@@ -74,11 +74,6 @@ td {
     vertical-align: top;
 }
 
-td img {
-    justify-content: center;
-    text-align: center;
-}
-
 .event-icon-container {
     display: flex;
     flex-direction: column;
