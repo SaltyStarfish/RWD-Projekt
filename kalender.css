@@ -138,7 +138,7 @@ td img {
     background-color: #D9D9D9;
 }
 
-#topleft {
+.topleft {
     border-radius: 77px 0 0 0;
     border-left: 4px solid #F3C846;
     border-top: 4px solid #F3C846;
