@@ -1,0 +1,154 @@
+.nyhedscontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: 600%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+}
+
+    .box1{
+   
+    background-color: white;
+    border-left: 3px solid #f3c846;
+    border-bottom: 3px solid #f3c846;
+    border-top: 3px solid #f3c846;
+    border-radius: 77px 0 0 0;
+    width: 38%;
+    text-align: center;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+        .box1, h1{
+        font-family: "museo-slab-rounded", sans-serif;
+        font-family: 900;
+        font-size: 22pt;
+        }
+
+        .box1, p{
+        font-family: "neue-kabel", sans-serif;
+        font-weight: 400;
+        font-size: 14pt;
+        }
+
+        .img1{
+            width: 50%;
+            border-radius: 50%;
+            border: 3px solid #000000;
+            place-self: bottom;
+        }
+
+    .box2{
+        background-color :#d84d34;
+        border-bottom: 3px solid #f3c846;
+        border-top: 3px solid #f3c846;
+        color: white;
+        place-content: center;
+        width: 38%;
+        padding: 15px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+        .box2, h1{
+            font-family: "museo-slab-rounded", sans-serif;
+            font-family: 900;
+            font-size: 22pt;
+        }
+
+        .box2, p{
+            font-family: "neue-kabel", sans-serif;
+            font-weight: 400;
+            font-size: 14pt;
+        }
+
+        .img2{
+            width: 50%;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            place-self: top;
+        }
+    
+    .box3 {
+        border-radius: 0 0 77px 0;  
+        border-right: 3px solid #f3c846;        
+        border-bottom: 3px solid #f3c846;
+        border-top: 3px solid #f3c846;
+        background-color: white;
+        place-content: center;
+        padding: 15px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 38%;
+    }
+        .box3, h1{
+            font-family: "museo-slab-rounded", sans-serif;
+            font-family: 900;
+            font-size: 22pt;
+            
+        }
+
+        .box3, p{
+            font-family: "neue-kabel", sans-serif;
+            font-weight: 400;
+            font-size: 14pt;
+        }
+    
+    .img3{
+        width: 50%;
+        border-radius: 50%;
+        border: 3px solid #000000;
+        place-self: bottom;
+    }
+
+@media screen and (max-width:767px){
+    .nyhedscontainer{
+        flex-direction: column;
+        
+    }
+
+    .box1{
+        border-radius: 42px 0 0 0;
+        border-left: 4px solid #F3C846;
+        border-top: 4px solid #F3C846;
+        border-bottom: 0px solid;
+        border-right: 4px solid #F3C846;
+        width: 100%;
+        place-content: right;
+    }
+
+    .img1{
+        place-self: left;
+    }
+
+    .box2{
+        border-radius: 0 0 0 0;
+        border-left: 4px solid #F3C846;
+        border-top: 0px solid;
+        border-bottom: 0px solid;
+        border-right: 4px solid #F3C846;
+        width: 100%;
+        place-content: left;
+    }
+
+    .img2{
+        place-self: right;
+    }
+
+    .box3{
+        border-radius: 0 0 42px 0;
+        border-left: 4px solid #F3C846;
+        border-top: 0px solid;
+        border-bottom: 4px solid #F3C846;
+        border-right: 4px solid #F3C846;
+        width: 100%;
+    }
+
+    .img3{
+        text-wrap: wrap;
+    }
+}
