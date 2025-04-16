@@ -64,15 +64,50 @@
     display: block;
   }
 
- /* ---------------------- Responsive ---------------------- */
+/* ---------------------- Responsive ---------------------- */
 
-@media only screen and (max-width: 768px) {
-    .headline-text {
-      flex-direction: column;
-      margin: 30px 20px;
-    }
+ @media only screen and (max-width: 768px) {
+  .headline-text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .headline-text h2 {
+    font-size: 36px;
+    position: relative;
+    left: -20px;
+    margin-bottom: 40px;
+    z-index: 3;
+  }
+
+  .circle {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+
+  .yellow {
+    width: 140px;
+    height: 140px;
+    z-index: 2;
+  }
+
+  .red {
+    width: 110px;
+    height: 110px;
+    left: 120px;
+    z-index: 1;
+  }
+
+.headline-text {
+  margin-bottom: -20px !important;
   }
   
+}
+
   @media only screen and (max-width: 1300px) {
     .line {
       display: none;
