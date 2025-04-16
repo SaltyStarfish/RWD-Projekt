@@ -16,17 +16,28 @@
     padding: 1em 2em;
   }
 
+   header {
+    position: sticky;
+    top: 0;
+    background-color: #22527A;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
   .navbar a:hover {
     font-weight: 800;
 }
   
-  .kreuzbar {
-    color: #D94D34;
-    font-family: "museo-slab-rounded", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-    font-size: 2em;
-  }
+.logo_header {
+  height: 40px;
+  width: auto;
+  text-align: left;
+}
   
   nav ul {
     display: flex;
