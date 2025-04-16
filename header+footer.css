@@ -46,7 +46,7 @@
     height: auto;
   }
 
-    /*----------Dropdown----------------*/
+/*----------Dropdown----------------*/
 
 .nav_links {
   list-style: none;
@@ -99,7 +99,6 @@
   display: block;
 }
  
-
 /*-----------------------Footer----------------------------------*/
 
 footer{
@@ -149,5 +148,31 @@ footer{
   margin-right: auto;
   padding: 20px;
   align-self: center;
+  }
+}
+
+/* ---------------------- Responsive header ---------------------- */
+#navmobil {
+  display: none;
+}
+
+.hamburger {
+  font-size: 2.5em;
+  color: white;
+  cursor: pointer;
+  display: none;
+  text-align: right;
+  top: 1em;
+  right: 1em;
+  padding: 0.5em 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  #navdesktop {
+    display: none;
+  }
+
+  #navmobil {
+    display: block;
   }
 }
