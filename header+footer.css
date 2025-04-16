@@ -59,12 +59,15 @@
 
 /*----------Dropdown----------------*/
 
-.nav_links {
+.dropdown {
+    position: relative;
+  }
+
+  .nav_links {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 
 .nav_links > li {
   float: left;
@@ -84,12 +87,13 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 100%;
-  left: 0;
   background-color: white;
-  width: 200px;
+  width: max-content;
+  min-width: 200px;
+  left: 0;
+  right: 0;
   display: none;
-  border-radius: 15px;
+  z-index: 999;
 }
 
 .menu li {
