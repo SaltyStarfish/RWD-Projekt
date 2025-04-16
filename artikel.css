@@ -1,0 +1,45 @@
+
+/* ---------------------- White Box ---------------------- */
+.white-box {
+    max-width: 1000px;
+    margin: 0 auto 80px auto;
+    background: #fff;
+    border: 3px solid #F3C846;
+    border-radius: 2em 0 2em 0;
+    padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section {
+    margin-bottom: 60px;
+  }
+  
+  .text {
+    text-align: left;
+  }
+  
+  .text p {
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  .highlight-text {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+ /* ---------------------- Responsive ---------------------- */
+
+ @media only screen and (max-width: 768px) {
+    .white-box {
+      margin: 30px 20px 40px 20px;
+      padding: 30px;
+    }
+    }
+
+ @media screen and (min-width: 769px) and (max-width: 1300px) {
+    .white-box {
+      margin: 30px;
+      text-align: center;
+    }
+  }

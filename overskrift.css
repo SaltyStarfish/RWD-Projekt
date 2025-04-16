@@ -1,0 +1,105 @@
+/* ---------------------- Headline ---------------------- */
+.headline-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+    margin: 30px 50px 30px 150px;
+  }
+  
+  .headline-text h2 {
+    font-size: 70px;
+    position: relative;
+    z-index: 3;
+    color: #242424;
+  }
+
+  .headline-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  /* ---------------------- Circles ---------------------- */
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .yellow {
+    background-color: #F3C846;
+    width: 198px;
+    height: 198px;
+    z-index: 2;
+    left: 0;
+  }
+  
+  .red {
+    background-color: #D84D34;
+    width: 162px;
+    height: 162px;
+    z-index: 1;
+    left: 150px;
+  }
+  
+  .circle-float {
+    float: left;
+    shape-outside: circle();
+    clip-path: circle();
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 1.5em 1em 0;
+    border: 4px solid #242424;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .circle-float.right {
+    float: right;
+    margin: 0 0 1em 1.5em;
+  }
+
+  /* ---------------------- Line ---------------------- */
+
+  .line {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 150px 0 0;
+  }
+  
+  .line img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+ /* ---------------------- Responsive ---------------------- */
+
+@media only screen and (max-width: 768px) {
+    .headline-text {
+      flex-direction: column;
+      margin: 30px 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .line {
+      display: none;
+    }
+  
+    .headline-row {
+      justify-content: center;
+    }
+  
+    .headline-text {
+      margin: 30px auto;
+    }
+  }
