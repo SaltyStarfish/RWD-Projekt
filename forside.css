@@ -1,0 +1,50 @@
+
+  .hero {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .status {
+    background-color: #F3C846;
+    color: #22527A;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .box {
+    display: flex;
+    background-color: white;
+    margin: 2em auto;
+    max-width: 1000px;
+    border-radius: 2em 0 2em 0;
+    overflow: hidden;
+    border: 3px solid #F3C846;
+  }
+  
+  .welcome {
+    flex: 1;
+    background-color: #D94D34;
+    color: white;
+    padding: 4em;
+    max-width: 50%;
+  }
+
+  .welcome h2 {
+    text-align: center;
+  }
+  
+  .logo {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+  }
+  
+  .logo img {
+    width: 80%;
+    height: auto;
+    max-width: 300px;
+  }
+
