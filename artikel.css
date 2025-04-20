@@ -1,6 +1,6 @@
 
-/* ---------------------- White Box ---------------------- */
-.white-box {
+/* ---------------------- Hvid boks ---------------------- */
+.hvid-boks {
     max-width: 1000px;
     margin: 0 auto 80px auto;
     background: #fff;
@@ -10,25 +10,25 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  .section {
+  .sektion {
     margin-bottom: 60px;
   }
   
-  .text {
+  .artikeltekst {
     text-align: left;
   }
   
-  .text p {
+  .artikeltekst p {
     line-height: 1.6;
     margin-top: 10px;
   }
   
-  .highlight-text {
+  .fremhævet-tekst {
     font-size: 22px;
     font-weight: 500;
   }
 
-  .circle-float {
+  .cirkel-float {
     float: left;
     shape-outside: circle();
     clip-path: circle();
@@ -41,22 +41,22 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
   
-  .circle-float.right {
+  .cirkel-float.højre {
     float: right;
     margin: 0 0 1em 1.5em;
   }
 
- /* ---------------------- Responsive ---------------------- */
+ /* ---------------------- Responsivt ---------------------- */
 
  @media only screen and (max-width: 768px) {
-    .white-box {
+    .hvid-boks {
       margin: 30px 20px 40px 20px;
       padding: 30px;
     }
     }
 
  @media screen and (min-width: 769px) and (max-width: 1300px) {
-    .white-box {
+    .hvid-boks {
       margin: 30px;
       text-align: center;
     }
