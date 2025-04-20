@@ -26,7 +26,7 @@
 }
         .box1, h1{
         font-family: "museo-slab-rounded", sans-serif;
-        font-family: 900;
+        font-weight: 900;
         font-size: 22pt;
         }
 
@@ -40,7 +40,6 @@
             width: 50%;
             border-radius: 50%;
             border: 3px solid #000000;
-            place-self: bottom;
         }
 
     .box2{
@@ -56,7 +55,7 @@
     }
         .box2, h1{
             font-family: "museo-slab-rounded", sans-serif;
-            font-family: 900;
+            font-weight: 900;
             font-size: 22pt;
         }
 
@@ -70,7 +69,7 @@
             width: 50%;
             border-radius: 50%;
             border: 3px solid #ffffff;
-            place-self: top;
+
         }
     
     .box3 {
@@ -87,7 +86,7 @@
     }
         .box3, h1{
             font-family: "museo-slab-rounded", sans-serif;
-            font-family: 900;
+            font-weight: 900;
             font-size: 22pt;
             
         }
@@ -96,19 +95,32 @@
             font-family: "neue-kabel", sans-serif;
             font-weight: 400;
             font-size: 14pt;
+            padding-bottom: 5%;
         }
     
     .img3{
         width: 50%;
         border-radius: 50%;
         border: 3px solid #000000;
-        place-self: bottom;
+        
     }
+
+/*----------------------------------------------------Mobilvisning---------------------------------------------*/
 
 @media screen and (max-width:767px){
     .nyhedscontainer{
         flex-direction: column;
-        
+        display: flex;
+
+    }
+
+    h2{
+        font-size: 20pt;
+
+    }
+
+    p{
+        font-size: 12pt;
     }
 
     .box1{
@@ -118,11 +130,20 @@
         border-bottom: 0px solid;
         border-right: 4px solid #F3C846;
         width: 100%;
-        place-content: right;
+    }
+    .img1{
+        float:left;
+        max-width: 35%;
+        height: auto;
+        margin-top: 50%;
+        margin-bottom:50%;
     }
 
-    .img1{
-        place-self: left;
+    .text1{
+        max-width: 60%;
+        float: right;
+        text-align: left;
+
     }
 
     .box2{
@@ -132,11 +153,21 @@
         border-bottom: 0px solid;
         border-right: 4px solid #F3C846;
         width: 100%;
-        place-content: left;
     }
 
     .img2{
-        place-self: right;
+        max-width: 35%;
+        height: auto; 
+        float: right;
+        margin-top: 50%;
+        margin-bottom:50%;
+    }
+
+    .text2{
+        max-width: 60%;
+        float: left;
+        text-align: left;
+        
     }
 
     .box3{
@@ -149,6 +180,17 @@
     }
 
     .img3{
-        text-wrap: wrap;
+        float:left;
+        max-width: 35%;
+        height: auto; 
+        margin-top: 50%;
+        margin-bottom:50%;
+    }
+
+    .text3{
+        max-width: 60%;
+        float: right;
+        text-align: left;
+        padding-left:5% ;
     }
 }
