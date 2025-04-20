@@ -21,7 +21,7 @@
     border: 3px solid #F3C846;
   }
   
-  .welcome {
+  .velkommen {
     flex: 1;
     background-color: #D94D34;
     color: white;
@@ -29,7 +29,7 @@
     max-width: 50%;
   }
 
-  .welcome h2 {
+  .velkommen h2 {
     text-align: center;
   }
   
