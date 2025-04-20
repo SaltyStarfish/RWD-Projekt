@@ -1,69 +1,71 @@
 @import url("https://use.typekit.net/xqb5zhb.css");
 
-/*-------------------Header---------------------------*/
-
-  header {
-    position: sticky;
-    top: 0;
-    background-color: #22527A;
-    z-index: 1000;
-  }
+/*------------------- HEADER ---------------------------*/
   
-  .navbar {
+header {
+  position: sticky;
+  top: 0;
+  background-color: #22527A;
+  z-index: 998;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  padding: 1em 2em;
+  flex-wrap: wrap;
+}
+
+.navdesktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-  }
+}
 
-   header {
-    position: sticky;
-    top: 0;
-    background-color: #22527A;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 2em;
-    max-width: 100%;
-    flex-wrap: wrap;
-  }
-
-  .navbar a:hover {
+.nav_links a:hover {
     font-weight: 800;
 }
   
 .logo_header {
-  height: 40px;
-  width: auto;
-  text-align: left;
+    height: 40px;
+    stroke: 10px #D84E33;
+    width: auto;
+    text-align: left;
 }
   
-  nav ul {
+nav ul {
     display: flex;
     list-style: none;
     gap: 3.5em;
-  }
+}
   
-  nav a {
+nav a {
     text-decoration: none;
     color: white;
     font-family: "museo-slab-rounded", sans-serif;
     font-weight: 700;
-  }
+}
   
-  .flag-icon {
+.flag-icon {
     width: 24px;
     height: auto;
-  }
+}
 
-/*----------Dropdown----------------*/
+#mobilmenu-toggle,
+#mobilmenu-toggle2 {
+  display: none;
+}
+
+/*---------- DROPDOWN ----------------*/
 
 .dropdown {
-    position: relative;
-  }
+  position: relative;
+}
 
-  .nav_links {
+.nav_links {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -112,6 +114,251 @@
   display: block;
 }
  
+/* ---------------------- RESPONSIVE HEADER ---------------------- */
+#navmobil {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#hamburger {
+  height: 90px;
+  cursor: pointer;
+  display: none;
+  text-align: right;
+  top: 1%;
+  right: 1%;
+  padding: 0.5em 1em;
+}
+
+#mobilsubmenu-toggle1,
+#mobilsubmenu-toggle2,
+#mobilsubmenu-toggle3 {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #navdesktop {
+    display: none;
+  }
+
+  #hamburger {
+    display: flex;
+    height: 80px;
+    cursor: pointer;
+    padding: 0.5em;
+  }
+
+  #mobilmenu-toggle:checked ~ nav#navmobil {
+    display: flex;
+  }
+
+  #navbarmobillogo {
+    width: 80px;
+    height: auto;
+  }
+
+  #close-icon {
+    display: flex;
+    width: 80px;
+    cursor: pointer;
+  }
+
+  #navmobil {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F3C84695;
+    backdrop-filter: blur(3px);
+    z-index: 1000;
+  }
+
+  #topbarmobil {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 2%;
+  }
+
+  #navmobil-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    height: 100%;
+  }
+
+  .navmobil_links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    gap: 1em;
+    padding-right: 2%;
+    margin-top: 2em;
+  }
+
+  .navmobil_links a {
+    display: block;
+    text-decoration: none;
+    font-family: "museo-slab-rounded", sans-serif;
+    font-size: 20pt;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #E38A2F;
+    background-color: #ffffff;
+    border: 5px solid #E38A2F;
+    text-align: right;
+    padding: 0.3em 1em;
+    margin: -0.2em 0;
+    border-radius: 40px;
+    width: 250px;
+  }
+
+  #someicons {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    padding-right: 2%;
+    margin: 0;
+  }
+
+  #someicons a {
+    background-color: transparent;
+    border: none;
+    width: 65px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .someicons-background {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 5px solid #E38A2F;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #someicons img {
+    display: block;
+    height: 50px;
+    width: auto;
+  }
+
+  .navmobil_links a:hover {
+    background-color: #E38A2F;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+  }
+
+  #menumobil-menu {
+    display: block;
+    text-decoration: none;
+    font-family: "museo-slab-rounded", sans-serif;
+    font-size: 20pt;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #E38A2F;
+    background-color: #ffffff;
+    border: 5px solid #E38A2F;
+    text-align: right;
+    padding: 0.3em 1em;
+    margin: -0.2em 0;
+    border-radius: 40px;
+    width: 250px;
+    height: 63px;
+  }
+
+  .open-this {
+    height: 22px;
+    rotate: 90deg;
+    transition: transform 0.2s ease;
+  }
+
+  .mobil-toggle-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+  }
+
+  #mobilsubmenu-toggle1:checked ~ label[for="mobilsubmenu-toggle1"] + #mobilsubmenu1,
+  #mobilsubmenu-toggle2:checked ~ label[for="mobilsubmenu-toggle2"] + #mobilsubmenu2,
+  #mobilsubmenu-toggle3:checked ~ label[for="mobilsubmenu-toggle3"] + #mobilsubmenu3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5em;
+  }
+
+  #mobilsubmenu-toggle1:checked + label .open-this, 
+  #mobilsubmenu-toggle2:checked + label .open-this, 
+  #mobilsubmenu-toggle3:checked + label .open-this {
+    transform: rotate(180deg);
+  }
+
+  .menumobil-open {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    font-family: "museo-slab-rounded", sans-serif;
+    font-size: 20pt;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #E38A2F;
+    background-color: #ffffff;
+    border: 5px solid #E38A2F;
+    text-align: right;
+    padding: 0.3em 1em;
+    margin: -0.2em 0;
+    border-radius: 40px;
+    width: 250px;
+    height: 63px;
+  }
+
+  .mobilsubmenu {
+    display: none;
+    position: absolute;
+    right: 260px;
+    top: 0;
+    border-radius: 40px;
+    z-index: 999;
+  }
+
+  .mobilsubmenu a {
+    display: flex;
+    font-size: 15pt;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.1em;
+    width: 240px;
+    height: 63px;
+  }
+
+  .dropdownmobil {
+    position: relative;
+  }
+}
+
 /*-----------------------Footer----------------------------------*/
 
 footer{
@@ -123,11 +370,16 @@ footer{
   align-content: center;
 }
 
+#footercontent h4{
+  font-weight: 700;
+  font-size: 20pt;
+  color: #ffffff;
+}
+
 #footercontent{
   display: flex;
   max-width: 1000px;
   margin: auto;
-
 }
 
 #footercontent > div{
@@ -164,28 +416,5 @@ footer{
   }
 }
 
-/* ---------------------- Responsive header ---------------------- */
-#navmobil {
-  display: none;
-}
 
-.hamburger {
-  font-size: 2.5em;
-  color: white;
-  cursor: pointer;
-  display: none;
-  text-align: right;
-  top: 1em;
-  right: 1em;
-  padding: 0.5em 1em;
-}
 
-@media only screen and (max-width: 768px) {
-  #navdesktop {
-    display: none;
-  }
-
-  #navmobil {
-    display: block;
-  }
-}

@@ -1,0 +1,185 @@
+.nyheder-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: 100%;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-bottom: 5%;
+}
+
+.nyheder-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#nyheder-box1 {
+    background-color: white;
+    border-radius: 77px 0 0 0;
+    border-left: 3px solid #f3c846;
+    border-top: 3px solid #f3c846;
+    border-bottom: 3px solid #f3c846;
+    width: 33%;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#nyheder-box2 {
+    background-color :#d84d34;
+    color: white;
+    border-top: 3px solid #f3c846;
+    border-bottom: 3px solid #f3c846;
+    width: 33%;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+    
+#nyheder-box3 {
+    background-color: white;
+    border-radius: 0 0 77px 0;  
+    border-right: 3px solid #f3c846;
+    border-top: 3px solid #f3c846;       
+    border-bottom: 3px solid #f3c846;
+    width: 33%;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.nyheder-text {
+    margin: 3%;
+}
+
+#nyheder-text1 {
+    min-height: 60%;
+}
+
+#nyheder-text3 {
+    min-height: 60%;
+}
+
+.nyheder-text p {
+    font-family: "neue-kabel", sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    text-align: left;
+}
+
+#nyheder-img1, 
+#nyheder-img3 {
+    width: 60%;
+    border-radius: 50%;
+    border: 3px solid #242424;
+    margin: 1%;
+}
+
+#nyheder-img2 {
+    width: 60%;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    margin: 1%;
+}
+
+/*- RESPONSIVE -*/
+
+@media screen and (max-width:768px) {
+    .nyheder-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        padding: 0 5%;
+    }
+
+    .nyheder-box h3 {
+        font-size: 15pt;
+    }
+
+    .nyheder-box p {
+        font-size: 10pt;
+    }
+
+    .nyheder-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    #nyheder-box1 {
+        border-radius: 42px 0 0 0;
+        border-left: 4px solid #F3C846;
+        border-top: 4px solid #F3C846;
+        border-bottom: 0px solid;
+        border-right: 4px solid #F3C846;
+        width: 100%;
+        height: auto;
+        padding: 5%;
+    }
+
+    #nyheder-box2 {
+        border-radius: 0 0 0 0;
+        border-left: 4px solid #F3C846;
+        border-top: 0px solid;
+        border-bottom: 0px solid;
+        border-right: 4px solid #F3C846;
+        width: 100%;
+        height: auto;
+        padding: 5%;
+    }
+
+    #nyheder-box3 {
+        border-radius: 0 0 42px 0;
+        border-left: 4px solid #F3C846;
+        border-top: 0px solid;
+        border-bottom: 4px solid #F3C846;
+        border-right: 4px solid #F3C846;
+        width: 100%;
+        height: auto;
+        padding: 7%;
+    }
+
+    #nyheder-text1,
+    #nyheder-text3 {
+        max-width: 55%;
+        height: auto;
+        float: right;
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    #nyheder-text2 {
+        max-width: 55%;
+        float: left;
+        text-align: left;
+        height: auto;
+        padding-right: 5%;
+    }
+
+    #nyheder-img1,
+    #nyheder-img3 {
+        float: left;
+    }
+
+    #nyheder-img2 {
+        float: right;
+    }
+
+    .nyheder-img {
+        max-width: 40%;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+}

@@ -1,50 +1,89 @@
+#index-hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
 
-  .hero {
-    width: 100%;
-    margin: 0;
-  }
+#stemningsvideo {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin-bottom: -10px;
+  z-index: 1;
+}
   
-  .status {
-    background-color: #F3C846;
-    color: #22527A;
-    text-align: center;
-    padding: 10px 0;
-  }
+.status {
+  background-color: #F3C846;
+  color: #22527A;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 2;
+}
   
-  .box {
-    display: flex;
-    background-color: white;
-    margin: 2em auto;
-    max-width: 1000px;
-    border-radius: 2em 0 2em 0;
-    overflow: hidden;
-    border: 3px solid #F3C846;
-  }
+.velkommen-container {
+  display: flex;
+  background-color: white;
+  margin: 2em auto;
+  max-width: 1000px;
+  border-radius: 2em 0 2em 0;
+  overflow: hidden;
+  border: 3px solid #F3C846;
+}
   
-  .velkommen {
-    flex: 1;
-    background-color: #D94D34;
-    color: white;
-    padding: 4em;
-    max-width: 50%;
-  }
+.velkommen {
+  flex: 1;
+  background-color: #D84D34;
+  color: white;
+  padding: 4em;
+  max-width: 50%;
+}
 
-  .velkommen h2 {
-    text-align: center;
-  }
+.velkommen h3 {
+  text-align: center;
+}
   
-  .logo {
-    flex: 1;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 50%;
-  }
+.logo {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+}
   
-  .logo img {
-    width: 80%;
-    height: auto;
-    max-width: 300px;
-  }
+.logo img {
+  width: 80%;
+  height: auto;
+  max-width: 400px;
+}
+
+/*--------------------------Buttons----------------------------------*/
+  
+.index-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em 2em;
+  margin-top: 2em
+}
+
+.index-buttons a {
+  background-color: #22527A;
+  color: white;
+  font-family: "museo-slab-rounded", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.index-buttons a:hover{
+  font-weight: 900;
+  color: #E38A2F;
+}
 

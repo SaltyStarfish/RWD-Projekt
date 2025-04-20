@@ -1,16 +1,14 @@
 h4 {    
-    font-family: "museo-slab-rounded", sans-serif;
     font-weight: 900;
-    font-size: 22pt;
     color: #242424;
 }
 
-.body-container {
+.calender-container {
     display: flex;
     flex-direction: column;
 }
 
-.måned {
+.month {
     width: 100%;
     display: flex;
     position: relative;
@@ -22,11 +20,11 @@ h4 {
     z-index: 2;
 }
 
-.kalender-logo {
+.calender-logo {
     width: 90px;
 }
 
-.kalender {
+.calender {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +40,7 @@ table {
     border-spacing: 0;
 }
 
-.kalender p {
+.calender p {
     font-family: "museo-slab-rounded", sans-serif;
     font-weight: 900;
     font-size: 14pt;
@@ -93,43 +91,43 @@ td {
     text-align: center;
 }
 
-.uge-kolonne {
+.week-column {
     border-top: 4px solid #F3C846;
 }
 
-.uge-kolonne2 {
+.week-column2 {
     border-top: 4px solid #F3C846;
     border-right: 4px solid #F3C846;
 }
 
-.dag-kolonne { 
+.day-column { 
     border-left: 4px solid #F3C846;
 }
 
-.dag-kolonne2 {
+.day-column2 {
     border-left: 4px solid #F3C846;
     border-bottom: 4px solid #F3C846;
 }
 
-.dag-kolonne3 {
+.day-column3 {
     border-right: 4px solid #F3C846;
 }
 
-.dag-kolonne4 {
+.day-column4 {
     border-bottom: 4px solid #F3C846;
 }
 
-.kalender-grå1 {
+.calender-grey1 {
     background-color: #D9D9D9;
     border-left: 4px solid #F3C846;
 }
 
-.kalender-grå2 {
+.calender-grey2 {
     background-color: #D9D9D9;
     border-bottom: 4px solid #F3C846;
 }
 
-.kalender-grå3 {
+.calender-grey3 {
     background-color: #D9D9D9;
 }
 
@@ -147,19 +145,19 @@ td {
 }
 
 @media screen and (max-width: 1000px) {
-    .måned {
+    .month {
         margin-bottom: -28px;
     }
     
-    .kalender-logo {
+    .calender-logo {
         width: 80px;
     }
 
-    .kalender th {
+    .calender th {
         font-size: 15pt;
     }
 
-    .kalender td {
+    .calender td {
         height: 110px;
     }
 
@@ -186,7 +184,7 @@ td {
 }
 
 @media screen and (max-width:768px) {
-    .måned {
+    .month {
         width: 100%;
         display: flex;
         position: relative;
@@ -197,41 +195,38 @@ td {
         margin-bottom: -20px;
     }
 
-    .måned h4 {
+    .month h4 {
         font-family: "museo-slab-rounded", sans-serif;
         font-weight: 900;
         font-size: 18pt;
         color: #242424;
     }
     
-    .kalender-logo {
+    .calender-logo {
         width: 60px;
     }
 
-    .kalender {
+    .calender {
         width: 100%;
         display: flex;
         justify-content: center;
     }
 
-    .kalender table {
+    .calender table {
         width: 100%;
         padding-left: 6%;
         padding-right: 6%;
     }
 
-    .kalender th {
-        font-family: "museo-slab-rounded", sans-serif;
-        font-weight: 900;
+    .calender th {
         font-size: 13pt;
-        color: #242424;
     }
 
-    .kalender td {
+    .calender td {
         height: 90px;
     }
 
-    .kalender p {
+    .calender p {
         font-family: "museo-slab-rounded", sans-serif;
         font-weight: 900;
         font-size: 10pt;
@@ -248,14 +243,32 @@ td {
 
     .topleft {
         border-radius: 42px 0 0 0;
-        border-left: 4px solid #F3C846;
-        border-top: 4px solid #F3C846;
     }
     
     .bottomright {
         border-radius: 0 0 42px 0;
-        border-right: 4px solid #F3C846;
-        border-bottom: 4px solid #F3C846;
-        background-color: #D9D9D9;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .kalender th {
+        font-size: 9pt;
+        height: 35px;
+    }
+    
+    .kalender td {
+        height: 60px;
+    }
+
+    .topleft {
+        border-radius: 30px 0 0 0;
+    }
+    
+    .bottomright {
+        border-radius: 0 0 30px 0;
+    }
+
+    .event-icon {
+        width: 15px;
     }
 }

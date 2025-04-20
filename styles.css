@@ -1,69 +1,59 @@
 @import url("https://use.typekit.net/xqb5zhb.css");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
   
 body {
-    margin: 0;
-    background-color: #F1DFC7;
-    color: #333;
-  }
+  margin: 0;
+  background-color: #F1DFC7;
+  color: #242424;
+}
 
-  h1, h2, h3, h4{
-    font-family: "museo-slab-rounded", sans-serif;
-    font-style: normal;
-  }
+h1, h2, h3, h4{
+  font-family: "museo-slab-rounded", sans-serif;
+  font-style: normal;
+}
 
-  h1, h2{
-    font-weight: 1000;
-  }
+h1, h2 {
+  font-weight: 1000;
+}
 
-  p {
-    font-family: "neue-kabel", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+h1 {
+  font-size: 50pt;
+}
 
-  }
+h2 {
+  font-size: 38pt;
+}
 
-  a{
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.2s ease;
-  }
+h3 {
+  font-weight: 900;
+  font-size: 28pt;
+}
 
-  a:hover {
-    color: #E38A2F;
-  }
+h4 {
+  font-weight: 700;
+  font-size: 25pt;
+}
 
-  
-/*--------------------------Buttons----------------------------------*/
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    padding: 2em 0;
-  }
-  
-  .buttons a {
-    background-color: #22527A;
-    color: white;
-    font-family: "museo-slab-rounded", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 0.8em 2em;
-    border: none;
-    border-radius: 1.5em;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-  }
+p {
+  font-family: "neue-kabel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .buttons a:hover{
-    font-weight: 900;
-    color: #E38A2F;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #E38A2F;
+}
+
+
