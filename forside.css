@@ -58,7 +58,7 @@
   max-width: 400px;
 }
 
-/*--------------------------Buttons----------------------------------*/
+/*--------------------------Knapper----------------------------------*/
   
 .index-buttons {
   display: flex;
@@ -86,4 +86,33 @@
   font-weight: 900;
   color: #E38A2F;
 }
+
+/*--------------------------Responsivt----------------------------------*/
+
+@media (max-width: 768px) {
+  .velkommen-container {
+    flex-direction: column;
+    border-radius: 1em;
+    margin: 42px 20px;
+  }
+
+  .velkommen, .logo {
+    max-width: 100%;
+    padding: 35px;
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .velkommen h3 {
+    font-size: 22px;
+  }
+
+  .index-buttons {
+    display: none;
+  }
+}
+
 
