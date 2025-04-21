@@ -136,7 +136,7 @@ nav a {
 }
 
 @media only screen and (max-width: 768px) { /* Skærm størrelse 768px, men der skal være et ekstra breakpoint ved 550px, hvor alt skal laves lidt mindre */
-  
+
   #navdesktop { 
     display: none; /* Desktop menu gemmes*/
   }
@@ -384,6 +384,7 @@ footer{
 }
 
 /*--------------------Tilføjelser til responsiv footer----------------------*/
+
 @media screen and (max-width:768px){
   
 #footercontent{

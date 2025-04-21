@@ -17,7 +17,9 @@
           <img src="assets/kreuzbar-red.svg" alt="KREUZBÄR logo" class="logo_header">
         </a>
       </div>
-  
+
+<!-- DESKTOP HEADER -->
+
       <div id="navbar">
         <div id="navdesktop">
           <nav>
@@ -64,31 +66,33 @@
             </ul>
           </nav>
         </div>
-  
+
+<!-- RESPONSIVE HEADER -->
+        
         <div class="navmobil-container">
-          <input type="checkbox" id="mobilmenu-toggle"/>
+          <input type="checkbox" id="mobilmenu-toggle"> <!-- Første menu er en checkbox (overlay) menu, der popper frem, når man tapper på burgerikonet -->
           <label for="mobilmenu-toggle">
-            <img src="assets/burgericon-white.png" id="hamburger" alt="hamburger icon"/>
+            <img src="assets/burgericon-white.png" id="hamburger" alt="hamburger icon">
           </label>
   
-          <nav id="navmobil">
+          <nav id="navmobil"> <!-- Burgermenuen har øverst et logo og en lukkeknap, så man kan navigere til forsiden eller lukke burgermenuen igen -->
             <div id="topbarmobil">
               <img src="assets/logo-blue.png" id="navbarmobillogo" alt="blåt logo">
               <label for="mobilmenu-toggle">
-                <img src="assets/close-orange.png" id="close-icon" alt="close icon"/>
+                <img src="assets/close-orange.png" id="close-icon" alt="close icon">
               </label>
             </div>
     
-            <div id="navmobil-content">
+            <div id="navmobil-content"> <!-- Derefter alt dens content, dvs. links til de forskellige sider -->
               <ul class="navmobil_links">
                 <li>
                   <a href="#">BOOK</a>
                 </li>
                 <li class="dropdownmobil">
-                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle1"/>
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle1"> <!-- Herunder 3 radio menuer, også kaldet submenuer - vi har valgt radio fordi der kun kan være én menu åben ad gangen, og fordi vi ikke har lært JavaScript -->
                   <label class="mobil-toggle-label" for="mobilsubmenu-toggle1">
                     <span class="menumobil-open">
-                      <img src="assets/open-this.png" class="open-this" alt="open this icon"/>
+                      <img src="assets/open-this.png" class="open-this" alt="open this icon">
                         MENU
                     </span>
                   </label>
@@ -101,10 +105,10 @@
                   <a href="nyheder.html">NYHEDER</a>
                 </li>
                 <li class="dropdownmobil">
-                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle2"/>
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle2"> <!-- Den 2. radio menu -->
                   <label class="mobil-toggle-label" for="mobilsubmenu-toggle2">
                     <span class="menumobil-open">
-                      <img src="assets/open-this.png" class="open-this" alt="open this icon"/>
+                      <img src="assets/open-this.png" class="open-this" alt="open this icon">
                       EVENTS
                     </span>
                   </label>
@@ -115,10 +119,10 @@
                   </ul>
                 </li>
                 <li class="dropdownmobil">
-                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle3"/>
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle3"> <!-- Den 3. radio menu -->
                   <label class="mobil-toggle-label" for="mobilsubmenu-toggle3">
                     <span class="menumobil-open">
-                      <img src="assets/open-this.png" class="open-this" alt="open this icon"/>
+                      <img src="assets/open-this.png" class="open-this" alt="open this icon">
                       OM OS
                     </span>
                   </label>
@@ -129,22 +133,24 @@
                     <li><a href="#">KONTAKT</a></li>
                   </ul>
                 </li>
-                <div id="someicons">
-                  <li>
-                    <a href="https://www.facebook.com/kreuzbardk">
-                      <div class="someicons-background">
-                        <img src="assets/facebook-icon-orange.svg" id="navbarfacebookicon" alt="orange facebook icon">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/kreuzbardk">
-                      <div class="someicons-background">
-                        <img src="assets/instagram-icon-orange.svg" id="navbarinstagramicon" alt="orange instagram icon"/>
-                      </div>
-                    </a>
-                  </li>
-                </div>
+                <li id="someicons"> <!-- Til sidst har vi ikoner til deres SoMe - Facebook og Instagram - i deres egen <li> for at gøre det nemmere at placere dem i forhold til content ovenfor -->
+                  <ul>
+                    <li>
+                      <a href="https://www.facebook.com/kreuzbardk">
+                        <div class="someicons-background"> <!-- Hvert ikon kom i en "wrapper" for at give dem en rund hvis baggrund med en orange kant, og for at de var nemmere at placere -->
+                          <img src="assets/facebook-icon-orange.svg" id="navbarfacebookicon" alt="orange facebook icon">
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/kreuzbardk">
+                        <div class="someicons-background">
+                          <img src="assets/instagram-icon-orange.svg" id="navbarinstagramicon" alt="orange instagram icon">
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </nav>
@@ -171,7 +177,7 @@
     <div class="velkommen-container">
       <section class="velkommen">
         <h3>ET LILLE STYKKE AF BERLIN<br>
-        <h3>– I HJERTET AF AARHUS</h3>
+        – I HJERTET AF AARHUS</h3>
         <br>
         <p>Velkommen til Kreuzbär, din berlinske oase i Aarhus. Her finder du en afslappet, hyggelig kaffebar med en unik charme fra den tyske hovedstad.</p>
         <br> 

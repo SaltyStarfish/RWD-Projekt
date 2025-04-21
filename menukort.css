@@ -1,4 +1,111 @@
+.menu-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 2em 0;
+  max-width: 700px;
+  justify-self: center;
+}
+
+.menu-buttons a {
+  background-color: #22527A;
+  color: white;
+  font-family: "museo-slab-rounded", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2em;
+  text-align: center;
+  width: 190px;
+  padding: 0.8em;
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-buttons a:hover{
+  font-weight: 900;
+  color: #E38A2F;
+}
+
+.menu-box {
+  background-color: white;
+  margin: 2em auto;
+  max-width: 700px;
+  border-radius: 2em 0 2em 0;
+  border: 3px solid #F3C846;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-logo-box{
+  justify-self: center;
+  width: 80px;
+  height: 0px;
+}
+
+.menu-logo-box img{
+  max-width: 100%;
+  margin-top: -50%;
+}
+
+.menu-white{
+  background-color: white;
+  color: #242424;
+  padding: 4em;
+  max-width: 100%;
+  border-radius: 1.8em 0 1.8em 0;
+}
+
+.menu-red {
+  background-color: #D94D34;
+  color: white;
+  padding: 4em;
+  max-width: 100%;
+  border-radius: 1.8em 0 1.8em 0;
+}
+
+.menu-white h2, .menu-red h2 {
+  text-align: center;
+}
+
+.mobil{
+  display: none;
+}
+
+/*----------------------------------------------------Mobilvisning---------------------------------------------*/
+
+
+@media screen and (max-width:768px){
+
+  .menu-red h2, .menu-white h2{
+    font-size: 18pt;
+  }
+
+  .menu-buttons{
+    display: none;
+  }
+
+  .menu-box {
+    max-width: 300px;
+  }
+
+  .menu-red, .menu-white{
+    padding: 2em;
+    overflow-wrap:break-word;
+  }
+
+  .laptop{
+    display: none;
+  }
+
+  .mobil{
+    display: block;
+  }
+}
+
 /*------------------------"FILTER"---------------*/
+
 #mobilfilter-toggle{
   display: none;
 }
@@ -96,109 +203,3 @@
 
 }
 /*------------------end of "FILTER"--------------*/
-
-.menu-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
-  padding: 2em 0;
-  max-width: 700px;
-  justify-self: center;
-}
-
-.menu-buttons a {
-  background-color: #22527A;
-  color: white;
-  font-family: "museo-slab-rounded", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.2em;
-  text-align: center;
-  width: 190px;
-  padding: 0.8em;
-  border: none;
-  border-radius: 1.5em;
-  cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-}
-
-.menu-buttons a:hover{
-  font-weight: 900;
-  color: #E38A2F;
-}
-
-.menu-box {
-  background-color: white;
-  margin: 2em auto;
-  max-width: 700px;
-  border-radius: 2em 0 2em 0;
-  border: 3px solid #F3C846;
-}
-
-.menu-logo-box{
-  justify-self: center;
-  width: 80px;
-  height: 0px;
-}
-
-.menu-logo-box img{
-  max-width: 100%;
-  margin-top: -50%;
-}
-
-
-.menu-white{
-  background-color: white;
-  color: #242424;
-  padding: 4em;
-  max-width: 100%;
-  border-radius: 1.8em 0 1.8em 0;
-}
-
-.menu-red {
-  background-color: #D94D34;
-  color: white;
-  padding: 4em;
-  max-width: 100%;
-  border-radius: 1.8em 0 1.8em 0;
-}
-
-.menu-white h2, .menu-red h2 {
-  text-align: center;
-}
-
-.mobil{
-  display: none;
-}
-
-/*----------------------------------------------------Mobilvisning---------------------------------------------*/
-
-
-@media screen and (max-width:768px){
-
-  .menu-red h2, .menu-white h2{
-    font-size: 18pt;
-  }
-
-  .menu-buttons{
-    display: none;
-  }
-
-  .menu-box {
-    max-width: 300px;
-  }
-
-  .menu-red, .menu-white{
-    padding: 2em;
-    overflow-wrap:break-word;
-  }
-
-  .laptop{
-    display: none;
-  }
-
-  .mobil{
-    display: block;
-  }
-}

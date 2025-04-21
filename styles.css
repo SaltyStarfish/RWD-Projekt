@@ -6,7 +6,9 @@
   padding: 0;
   line-height: 1.5;
 }
-  
+
+/* ---------------------- Generelt ---------------------- */
+
 body {
   margin: 0;
   background-color: #F1DFC7; /* Beige baggrundsfarve */
@@ -128,45 +130,45 @@ a:hover {
 /* ---------------------- Responsivt ---------------------- */
 
 @media only screen and (max-width: 768px) {
-.overskrift-tekst {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-  margin-bottom: -20px !important;
-}
+  .overskrift-tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin-bottom: -20px !important;
+  }
 
-.overskrift-tekst h1 {
-  position: relative;
-  left: -20px;
-  margin-bottom: 40px;
-  z-index: 3;
-}
+  .overskrift-tekst h1 {
+    position: relative;
+    left: -20px;
+    margin-bottom: 40px;
+    z-index: 3;
+  }
 
-.cirkel {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-}
+  .cirkel {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+  }
 
-.gul {
-  width: 140px;
-  height: 140px;
-  z-index: 2;
-}
+  .gul {
+    width: 140px;
+    height: 140px;
+    z-index: 2;
+  }
 
-.rød {
-  width: 110px;
-  height: 110px;
-  left: 120px;
-  z-index: 1;
-}
+  .rød {
+    width: 110px;
+    height: 110px;
+    left: 120px;
+    z-index: 1;
+  }
 
-.linje {
-  display: none;
-}
+  .linje {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1300px) {

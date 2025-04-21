@@ -6,7 +6,6 @@
     <title>Kreuzbär – Historien bag</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="header+footer.css">
-    <link rel="stylesheet" href="overskrift.css">
     <link rel="stylesheet" href="artikel.css">
     <link rel="stylesheet" href="https://use.typekit.net/xqb5zhb.css">
 </head>
@@ -19,7 +18,9 @@
           <img src="assets/kreuzbar-red.svg" alt="KREUZBÄR logo" class="logo_header">
         </a>
       </div>
-  
+
+<!-- DESKTOP HEADER -->
+
       <div id="navbar">
         <div id="navdesktop">
           <nav>
@@ -66,31 +67,33 @@
             </ul>
           </nav>
         </div>
-  
+
+<!-- RESPONSIVE HEADER -->
+        
         <div class="navmobil-container">
-          <input type="checkbox" id="mobilmenu-toggle"/>
+          <input type="checkbox" id="mobilmenu-toggle"> <!-- Første menu er en checkbox (overlay) menu, der popper frem, når man tapper på burgerikonet -->
           <label for="mobilmenu-toggle">
-            <img src="assets/burgericon-white.png" id="hamburger" alt="hamburger icon"/>
+            <img src="assets/burgericon-white.png" id="hamburger" alt="hamburger icon">
           </label>
   
-          <nav id="navmobil">
+          <nav id="navmobil"> <!-- Burgermenuen har øverst et logo og en lukkeknap, så man kan navigere til forsiden eller lukke burgermenuen igen -->
             <div id="topbarmobil">
               <img src="assets/logo-blue.png" id="navbarmobillogo" alt="blåt logo">
               <label for="mobilmenu-toggle">
-                <img src="assets/close-orange.png" id="close-icon" alt="close icon"/>
+                <img src="assets/close-orange.png" id="close-icon" alt="close icon">
               </label>
             </div>
     
-            <div id="navmobil-content">
+            <div id="navmobil-content"> <!-- Derefter alt dens content, dvs. links til de forskellige sider -->
               <ul class="navmobil_links">
                 <li>
                   <a href="#">BOOK</a>
                 </li>
                 <li class="dropdownmobil">
-                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle1"/>
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle1"> <!-- Herunder 3 radio menuer, også kaldet submenuer - vi har valgt radio fordi der kun kan være én menu åben ad gangen, og fordi vi ikke har lært JavaScript -->
                   <label class="mobil-toggle-label" for="mobilsubmenu-toggle1">
                     <span class="menumobil-open">
-                      <img src="assets/open-this.png" class="open-this" alt="open this icon"/>
+                      <img src="assets/open-this.png" class="open-this" alt="open this icon">
                         MENU
                     </span>
                   </label>
@@ -103,10 +106,10 @@
                   <a href="nyheder.html">NYHEDER</a>
                 </li>
                 <li class="dropdownmobil">
-                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle2"/>
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle2"> <!-- Den 2. radio menu -->
                   <label class="mobil-toggle-label" for="mobilsubmenu-toggle2">
                     <span class="menumobil-open">
-                      <img src="assets/open-this.png" class="open-this" alt="open this icon"/>
+                      <img src="assets/open-this.png" class="open-this" alt="open this icon">
                       EVENTS
                     </span>
                   </label>
@@ -117,10 +120,10 @@
                   </ul>
                 </li>
                 <li class="dropdownmobil">
-                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle3"/>
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle3"> <!-- Den 3. radio menu -->
                   <label class="mobil-toggle-label" for="mobilsubmenu-toggle3">
                     <span class="menumobil-open">
-                      <img src="assets/open-this.png" class="open-this" alt="open this icon"/>
+                      <img src="assets/open-this.png" class="open-this" alt="open this icon">
                       OM OS
                     </span>
                   </label>
@@ -131,22 +134,24 @@
                     <li><a href="#">KONTAKT</a></li>
                   </ul>
                 </li>
-                <div id="someicons">
-                  <li>
-                    <a href="https://www.facebook.com/kreuzbardk">
-                      <div class="someicons-background">
-                        <img src="assets/facebook-icon-orange.svg" id="navbarfacebookicon" alt="orange facebook icon">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/kreuzbardk">
-                      <div class="someicons-background">
-                        <img src="assets/instagram-icon-orange.svg" id="navbarinstagramicon" alt="orange instagram icon"/>
-                      </div>
-                    </a>
-                  </li>
-                </div>
+                <li id="someicons"> <!-- Til sidst har vi ikoner til deres SoMe - Facebook og Instagram - i deres egen <li> for at gøre det nemmere at placere dem i forhold til content ovenfor -->
+                  <ul>
+                    <li>
+                      <a href="https://www.facebook.com/kreuzbardk">
+                        <div class="someicons-background"> <!-- Hvert ikon kom i en "wrapper" for at give dem en rund hvis baggrund med en orange kant, og for at de var nemmere at placere -->
+                          <img src="assets/facebook-icon-orange.svg" id="navbarfacebookicon" alt="orange facebook icon">
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/kreuzbardk">
+                        <div class="someicons-background">
+                          <img src="assets/instagram-icon-orange.svg" id="navbarinstagramicon" alt="orange instagram icon">
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </nav>
@@ -159,48 +164,54 @@
 
     <div class="overskrift">
       <div class="overskrift-tekst">
-        <div class="cirkel gul"></div>
-        <div class="cirkel rød"></div>
+        <div class="cirkel gul">
+        </div>
+        <div class="cirkel rød">
+        </div>
           <h1>HISTORIEN BAG</h1>
-        </div>
-        <div class="linje">
-          <img src="assets/header-line.svg" alt="Linje overskrift">
-        </div>
-      </div>      
+      </div>
+      <div class="linje">
+        <img src="assets/header-line.svg" alt="Linje overskrift">
+      </div>
+    </div>      
        
-      <div class="hvid-boks">
-        <div class="sektion">
-          <div class="billedtekst">
-            <div class="artikeltekst">
-              <img src="pics/kreuzbar–stole.jpg" alt="Stole og billedvæg på Kreuzbär" class="cirkel-float left">
-              <p>
-                <span class="fremhævet-tekst">Velkommen til Kreuzbär</span> – et lille stykke af Berlin i Aarhus! På vores café på Thorvaldsensgade, i smørhullet mellem Aros og Den Gamle By, har vi skabt et fristed med nik til de hyggelige kaffebarer i den tyske hovedstad.
-              </p>
-              <p>
-                Vores idé om at åbne Kreuzbär opstod efter mange besøg i Berlin. Her blev vi inspireret af den kosmopolitiske og mangfoldige cafékultur, som især kvartererne Kreuzberg og Friedrichshain er kendt for. Og det ville vi gerne bringe til Aarhus!
-              </p>
-              <p>
-                Hos os kan du nyde en afslappet atmosfære med hjemmelavet mad og kaffe fra et lokalt risteri. Vores møbler er lidt skæve og væggene fyldt med billeder, der giver dig følelsen af at sidde på en af Berlins uformelle kaffebarer. Her er plads til alle, og du er velkommen til at studere eller arbejde her eller blot lade dig dumpe ned i lænestolen med en god bog – akkurat som i Berlin!
-              </p>
-            </div>
+    <div class="hvid-boks">
+      <div class="sektion">
+        <div class="billedtekst">
+          <div class="artikeltekst">
+            <img src="pics/kreuzbar–stole.jpg" alt="Stole og billedvæg på Kreuzbär" class="cirkel-float left">
+            <p>
+              <span class="fremhævet-tekst">
+                Velkommen til Kreuzbär
+              </span> 
+              – et lille stykke af Berlin i Aarhus! På vores café på Thorvaldsensgade, i smørhullet mellem Aros og Den Gamle By, har vi skabt et fristed med nik til de hyggelige kaffebarer i den tyske hovedstad.
+            </p>
+            <p>
+              Vores idé om at åbne Kreuzbär opstod efter mange besøg i Berlin. Her blev vi inspireret af den kosmopolitiske og mangfoldige cafékultur, som især kvartererne Kreuzberg og Friedrichshain er kendt for. Og det ville vi gerne bringe til Aarhus!
+            </p>
+            <p>
+              Hos os kan du nyde en afslappet atmosfære med hjemmelavet mad og kaffe fra et lokalt risteri. Vores møbler er lidt skæve og væggene fyldt med billeder, der giver dig følelsen af at sidde på en af Berlins uformelle kaffebarer. Her er plads til alle, og du er velkommen til at studere eller arbejde her eller blot lade dig dumpe ned i lænestolen med en god bog – akkurat som i Berlin!
+            </p>
           </div>
         </div>
+      </div>
                   
-        <div class="sektion">
-          <div class="billedtekst">
-            <div class="artikeltekst">
-              <img src="pics/berlin-on-the-wall.jpg" alt="Kreuzbärs Berlin On the Wall med rejsetips" class="cirkel-float højre">
-              <p>
-                <span class="fremhævet-tekst">Kreuzbär handler ikke</span> kun om kaffe og mad – det er et sted, hvor vi gerne vil bringe ‘Volksbühne’-konceptet ind. Vores gæster er med til at sætte deres præg på caféen – både i indretningen og med inputs til vores events.
-              </p>
-              <p>
-                Vi afholder Berlin-temaaftener og intime koncerter, og den sidste torsdag i hver måned er der strikkecafé. Vi åbner dørene for både nye og gamle bekendtskaber, og vi glæder os til at byde dig velkommen i vores lille berliner-oase.
-              </p>
-              <p>
-                Liebe Grüße,<br>
-                Bjørn & Charlotte
-              </p>
-            </div>
+      <div class="sektion">
+        <div class="billedtekst">
+          <div class="artikeltekst">
+            <img src="pics/berlin-on-the-wall.jpg" alt="Kreuzbärs Berlin On the Wall med rejsetips" class="cirkel-float højre">
+            <p>
+              <span class="fremhævet-tekst">
+                Kreuzbär handler ikke
+              </span> kun om kaffe og mad – det er et sted, hvor vi gerne vil bringe ‘Volksbühne’-konceptet ind. Vores gæster er med til at sætte deres præg på caféen – både i indretningen og med inputs til vores events.
+            </p>
+            <p>
+              Vi afholder Berlin-temaaftener og intime koncerter, og den sidste torsdag i hver måned er der strikkecafé. Vi åbner dørene for både nye og gamle bekendtskaber, og vi glæder os til at byde dig velkommen i vores lille berliner-oase.
+            </p>
+            <p>
+              Liebe Grüße,<br>
+              Bjørn & Charlotte
+            </p>
           </div>
         </div>
       </div>

@@ -6,18 +6,18 @@
 }
 
 #stemningsvideo {
-  width: 100%;
+  width: 100%; /* Gør at videoen fylder hele bredden, unanset bredden af skærmen den ses på */
   height: auto;
   padding: 0;
   margin-bottom: -10px;
   z-index: 1;
 }
   
-.status {
+.status { /* Tilføjet en status bar, for at vise om stedet er åbent eller lukket */
   background-color: #F3C846;
-  color: #22527A;
-  text-align: center;
-  padding: 10px 0;
+  color: #242424; /* Farven vi bruger til tekst på sitet, ikke helt sort, men mørkegrå */
+  text-align: center; /* Teksten skal være centreret inde i status baren */
+  padding: 10px 0; /* Status baren skal være 10px tyk */
   z-index: 2;
 }
   
@@ -25,10 +25,12 @@
   display: flex;
   background-color: white;
   margin: 2em auto;
-  max-width: 1000px;
-  border-radius: 2em 0 2em 0;
+  width: 65%;
+  height: auto;
+  border-radius: 77px 0 77px 0;
   overflow: hidden;
   border: 3px solid #F3C846;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
   
 .velkommen {
@@ -37,6 +39,7 @@
   color: white;
   padding: 4em;
   max-width: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .velkommen h3 {
@@ -76,13 +79,12 @@
   font-style: normal;
   font-size: 1.2em;
   padding: 0.8em 2em;
-  border: none;
   border-radius: 1.5em;
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Tilføjet skygge for at indikere at de er knapper */
 }
 
-.index-buttons a:hover{
+.index-buttons a:hover { /* Teksten bliver tykkere og orange som ved alle andre links */
   font-weight: 900;
   color: #E38A2F;
 }
@@ -91,9 +93,10 @@
 
 @media (max-width: 768px) {
   .velkommen-container {
-    flex-direction: column;
-    border-radius: 1em;
-    margin: 42px 20px;
+    flex-direction: column; /* Content placeres vertikalt i responsive */
+    border-radius: 42px 0 42px 0;
+    margin-top: 3%;
+    width: 70%;
   }
 
   .velkommen, .logo {
@@ -110,7 +113,7 @@
     font-size: 22px;
   }
 
-  .index-buttons {
+  .index-buttons { /* Knapperne skjules i responsiv */
     display: none;
   }
 }

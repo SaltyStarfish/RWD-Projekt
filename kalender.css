@@ -38,6 +38,7 @@ table {
     padding-right: 15%;
     border-collapse: separate; /* For at undgå at der blev to borders, dvs. at borderen blev meget tykkere end den skulle være, måtte jeg bruge separate her, da collapse ikke fungerede som jeg ville have det */ 
     border-spacing: 0; /* Og derefter border-spacing for at undgå at der blev plads mellem borderne og cellerne */
+    
 }
 
 .calender p {
@@ -54,7 +55,7 @@ tr {
 th, td {
     font-family: "museo-slab-rounded", sans-serif;
     color: #242424;
-    border: 2px solid #F3C846;
+    border: 1px solid #F3C846;
     width: 80px;
 }
 
@@ -64,12 +65,14 @@ th {
     text-align: center;
     background-color: white;
     height: 77px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 td {
     height: 140px;
     text-align: left;
     vertical-align: top;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .event-icon-container {
@@ -94,39 +97,39 @@ td {
 /* Kalenderen har kun afrundet hjørne over til højre og nederst til venstre, og en 4px solid border hele vejen rundt */
 
 .week-column {
-    border-top: 4px solid #F3C846;
+    border-top: 2px solid #F3C846;
 }
 
 .week-column2 {
-    border-top: 4px solid #F3C846;
-    border-right: 4px solid #F3C846;
+    border-top: 2px solid #F3C846;
+    border-right: 2px solid #F3C846;
 }
 
 .day-column { 
-    border-left: 4px solid #F3C846;
+    border-left: 2px solid #F3C846;
 }
 
 .day-column2 {
-    border-left: 4px solid #F3C846;
-    border-bottom: 4px solid #F3C846;
+    border-left: 2px solid #F3C846;
+    border-bottom: 2px solid #F3C846;
 }
 
 .day-column3 {
-    border-right: 4px solid #F3C846;
+    border-right: 2px solid #F3C846;
 }
 
 .day-column4 {
-    border-bottom: 4px solid #F3C846;
+    border-bottom: 2px solid #F3C846;
 }
 
 .calender-grey1 {
     background-color: #D9D9D9;
-    border-left: 4px solid #F3C846;
+    border-left: 2px solid #F3C846;
 }
 
 .calender-grey2 {
     background-color: #D9D9D9;
-    border-bottom: 4px solid #F3C846;
+    border-bottom: 2px solid #F3C846;
 }
 
 .calender-grey3 {
@@ -135,14 +138,14 @@ td {
 
 .topleft {
     border-radius: 77px 0 0 0; /* Kun den øverste venstre kant skal være rund */
-    border-left: 4px solid #F3C846;
-    border-top: 4px solid #F3C846;
+    border-left: 2px solid #F3C846;
+    border-top: 2px solid #F3C846;
 }
 
 .bottomright {
     border-radius: 0 0 77px 0; /* Kun den nederste højre kant skal være rund */
-    border-right: 4px solid #F3C846;
-    border-bottom: 4px solid #F3C846;
+    border-right: 2px solid #F3C846;
+    border-bottom: 2px solid #F3C846;
     background-color: #D9D9D9;
 }
 
@@ -160,7 +163,7 @@ td {
     }
 
     .calender td {
-        height: 110px; /* Højden på cellerne er sat ned */
+        height: 100px; /* Højden på cellerne er sat ned */
     }
 
     .event-icon {
@@ -173,14 +176,14 @@ td {
 
     .topleft {
         border-radius: 55px 0 0 0; /* Kun den øverste venstre kant skal være rund, men mindre end ved fuld skærm */
-        border-left: 4px solid #F3C846;
-        border-top: 4px solid #F3C846;
+        border-left: 2px solid #F3C846;
+        border-top: 2px solid #F3C846;
     }
     
     .bottomright {
         border-radius: 0 0 55px 0; /* Kun den nederste højre kant skal være rund, men mindre end ved fuld skærm */
-        border-right: 4px solid #F3C846;
-        border-bottom: 4px solid #F3C846;
+        border-right: 2px solid #F3C846;
+        border-bottom: 2px solid #F3C846;
         background-color: #D9D9D9;
     }
 }
@@ -247,13 +250,13 @@ td {
 }
 
 @media screen and (max-width:500px) { /* Breakpointet var ikke nødvendigt, men fik lyst til at tilføje det alligevel */
-    .kalender th {
+    .calender th {
         font-size: 9pt;
         height: 35px;
     }
     
-    .kalender td {
-        height: 60px;
+    .calender td {
+        height: 50px;
     }
 
     .topleft {

@@ -28,6 +28,7 @@
     border-left: 3px solid #f3c846;
     border-top: 3px solid #f3c846;
     border-bottom: 3px solid #f3c846;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #nyheder-box2 {
@@ -35,6 +36,7 @@
     color: white;
     border-top: 3px solid #f3c846;
     border-bottom: 3px solid #f3c846;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
     
 #nyheder-box3 {
@@ -43,6 +45,7 @@
     border-right: 3px solid #f3c846;
     border-top: 3px solid #f3c846;       
     border-bottom: 3px solid #f3c846;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nyheder-text {

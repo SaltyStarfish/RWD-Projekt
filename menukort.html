@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kreuzbär – Aarhus-café med berlinerstemning</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="header+footer.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="header+footer.css">
   <link rel="stylesheet" href="menukort.css">
   <link rel="stylesheet" href="https://use.typekit.net/xqb5zhb.css">
 </head>
@@ -17,7 +17,9 @@
           <img src="assets/kreuzbar-red.svg" alt="KREUZBÄR logo" class="logo_header">
         </a>
       </div>
-  
+
+<!-- DESKTOP HEADER -->
+
       <div id="navbar">
         <div id="navdesktop">
           <nav>
@@ -64,14 +66,16 @@
             </ul>
           </nav>
         </div>
-  
+
+<!-- RESPONSIVE HEADER -->
+        
         <div class="navmobil-container">
-          <input type="checkbox" id="mobilmenu-toggle">
+          <input type="checkbox" id="mobilmenu-toggle"> <!-- Første menu er en checkbox (overlay) menu, der popper frem, når man tapper på burgerikonet -->
           <label for="mobilmenu-toggle">
             <img src="assets/burgericon-white.png" id="hamburger" alt="hamburger icon">
           </label>
   
-          <nav id="navmobil">
+          <nav id="navmobil"> <!-- Burgermenuen har øverst et logo og en lukkeknap, så man kan navigere til forsiden eller lukke burgermenuen igen -->
             <div id="topbarmobil">
               <img src="assets/logo-blue.png" id="navbarmobillogo" alt="blåt logo">
               <label for="mobilmenu-toggle">
@@ -79,13 +83,13 @@
               </label>
             </div>
     
-            <div id="navmobil-content">
+            <div id="navmobil-content"> <!-- Derefter alt dens content, dvs. links til de forskellige sider -->
               <ul class="navmobil_links">
                 <li>
                   <a href="#">BOOK</a>
                 </li>
                 <li class="dropdownmobil">
-                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle1">
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle1"> <!-- Herunder 3 radio menuer, også kaldet submenuer - vi har valgt radio fordi der kun kan være én menu åben ad gangen, og fordi vi ikke har lært JavaScript -->
                   <label class="mobil-toggle-label" for="mobilsubmenu-toggle1">
                     <span class="menumobil-open">
                       <img src="assets/open-this.png" class="open-this" alt="open this icon">
@@ -101,7 +105,7 @@
                   <a href="nyheder.html">NYHEDER</a>
                 </li>
                 <li class="dropdownmobil">
-                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle2">
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle2"> <!-- Den 2. radio menu -->
                   <label class="mobil-toggle-label" for="mobilsubmenu-toggle2">
                     <span class="menumobil-open">
                       <img src="assets/open-this.png" class="open-this" alt="open this icon">
@@ -115,7 +119,7 @@
                   </ul>
                 </li>
                 <li class="dropdownmobil">
-                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle3">
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle3"> <!-- Den 3. radio menu -->
                   <label class="mobil-toggle-label" for="mobilsubmenu-toggle3">
                     <span class="menumobil-open">
                       <img src="assets/open-this.png" class="open-this" alt="open this icon">
@@ -129,11 +133,11 @@
                     <li><a href="#">KONTAKT</a></li>
                   </ul>
                 </li>
-                <li id="someicons">
+                <li id="someicons"> <!-- Til sidst har vi ikoner til deres SoMe - Facebook og Instagram - i deres egen <li> for at gøre det nemmere at placere dem i forhold til content ovenfor -->
                   <ul>
                     <li>
                       <a href="https://www.facebook.com/kreuzbardk">
-                        <div class="someicons-background">
+                        <div class="someicons-background"> <!-- Hvert ikon kom i en "wrapper" for at give dem en rund hvis baggrund med en orange kant, og for at de var nemmere at placere -->
                           <img src="assets/facebook-icon-orange.svg" id="navbarfacebookicon" alt="orange facebook icon">
                         </div>
                       </a>
@@ -158,21 +162,24 @@
 <main>
 
 <!--FILTER-->
-  <nav id="filtermobil">
-      <input type="checkbox" id="mobilfilter-toggle"/>
-      <label for="mobilfilter-toggle" id="filter-knap">FILTER <img src="assets/open-this.png" class="open-this-filter" alt="open this icon"/></label>
 
-      <div id="filtermobil-content">
-          <ul class="filtermobil_links">
-              <li><a href="#morgenmad">MORGENMAD</a></li>
-              <li><a href="#brunch">BRUNCH</a></li>
-              <li><a href="#tapas">TAPAS</a></li>
-              <li><a href="#panini">PANINI</a></li>
-              <li><a href="#sweets">SÜSSIGKEITEN</a></li>
-              <li><a href="#varme-drikke">VARME DRIKKE</a></li>
-              <li><a href="#kolde-drikke">KOLDE DRIKKE</a></li>
-          </ul>
-      </div>
+  <nav id="filtermobil">
+    <input type="checkbox" id="mobilfilter-toggle">
+    <label for="mobilfilter-toggle" id="filter-knap">
+      FILTER
+      <img src="assets/open-this.png" class="open-this-filter" alt="open this icon">
+    </label>
+    <div id="filtermobil-content">
+      <ul class="filtermobil_links">
+        <li><a href="#morgenmad">MORGENMAD</a></li>
+        <li><a href="#brunch">BRUNCH</a></li>
+        <li><a href="#tapas">TAPAS</a></li>
+        <li><a href="#panini">PANINI</a></li>
+        <li><a href="#sweets">SÜSSIGKEITEN</a></li>
+        <li><a href="#varme-drikke">VARME DRIKKE</a></li>
+        <li><a href="#kolde-drikke">KOLDE DRIKKE</a></li>
+      </ul>
+    </div>
   </nav>
 
 <!--end of FILTER-->
