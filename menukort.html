@@ -11,18 +11,145 @@
 </head>
 <body>
   <header>
-    <div class="navbar">
-      <div class="kreuzbar"><a href="index.html">KREUZBÄR</a></div>
-      <nav>
-        <ul>
-          <li><a href="#">BOOK</a></li>
-          <li><a href="#">MENU</a></li>
-          <li><a href="#">NYHEDER</a></li>
-          <li><a href="#">EVENTS</a></li>
-          <li><a href="#">OM OS</a></li>
-          <li><a href="#"><img src="flag-icon.png" alt="Language – English" class="flag-icon"></a></li>
-        </ul>
-      </nav>
+    <div class="header-container">
+      <div class="kreuzbar">
+        <a href="index.html">
+          <img src="assets/kreuzbar-red.svg" alt="KREUZBÄR logo" class="logo_header">
+        </a>
+      </div>
+  
+      <div id="navbar">
+        <div id="navdesktop">
+          <nav>
+            <ul class="nav_links">
+              <li>
+                <a href="#">BOOK</a>
+              </li>
+              <li class="dropdown">
+                <a href="#">MENU</a>
+                <ul class="menu">
+                  <li><a href="menukort.html">MENU</a></li>
+                  <li><a href="#">TAKEAWAY</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="nyheder.html">NYHEDER</a>
+              </li>
+              <li class="dropdown">
+                <a href="#">EVENTS</a>
+                <ul class="menu">
+                  <li><a href="#">LEJ LOKALE</a></li>
+                  <li><a href="kalender.html">KALENDER</a></li>
+                  <li><a href="#">CATERING</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">OM OS</a>
+                <ul class="menu">
+                  <li><a href="#">OMTALE</a></li>
+                  <li><a href="historien-bag.html">HISTORIEN BAG</a></li>
+                  <li><a href="#">GALLERI</a></li>
+                  <li><a href="#">KONTAKT</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">
+                  <img src="assets/dkflag.png" alt="Sprog – Dansk" class="flag-icon">
+                </a>
+                <ul class="menu">
+                  <li><a href="#"><img src="assets/jack.png" alt="Language – English" class="flag-icon"></a></li>
+                  <li><a href="#"><img src="assets/bundes.png" alt="Sprache – Deutsch" class="flag-icon"></a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+  
+        <div class="navmobil-container">
+          <input type="checkbox" id="mobilmenu-toggle"/>
+          <label for="mobilmenu-toggle">
+            <img src="assets/burgericon-white.png" id="hamburger" alt="hamburger icon"/>
+          </label>
+  
+          <nav id="navmobil">
+            <div id="topbarmobil">
+              <img src="assets/logo-blue.png" id="navbarmobillogo" alt="blåt logo">
+              <label for="mobilmenu-toggle">
+                <img src="assets/close-orange.png" id="close-icon" alt="close icon"/>
+              </label>
+            </div>
+    
+            <div id="navmobil-content">
+              <ul class="navmobil_links">
+                <li>
+                  <a href="#">BOOK</a>
+                </li>
+                <li class="dropdownmobil">
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle1"/>
+                  <label class="mobil-toggle-label" for="mobilsubmenu-toggle1">
+                    <span class="menumobil-open">
+                      <img src="assets/open-this.png" class="open-this" alt="open this icon"/>
+                        MENU
+                    </span>
+                  </label>
+                  <ul class="mobilsubmenu" id="mobilsubmenu1">
+                    <li><a href="menukort.html">MENU KORT</a></li>
+                    <li><a href="#">TAKEAWAY</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="nyheder.html">NYHEDER</a>
+                </li>
+                <li class="dropdownmobil">
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle2"/>
+                  <label class="mobil-toggle-label" for="mobilsubmenu-toggle2">
+                    <span class="menumobil-open">
+                      <img src="assets/open-this.png" class="open-this" alt="open this icon"/>
+                      EVENTS
+                    </span>
+                  </label>
+                  <ul class="mobilsubmenu" id="mobilsubmenu2">
+                    <li><a href="#">LEJ LOKALE</a></li>
+                    <li><a href="kalender.html">KALENDER</a></li>
+                    <li><a href="#">CATERING</a></li>
+                  </ul>
+                </li>
+                <li class="dropdownmobil">
+                  <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle3"/>
+                  <label class="mobil-toggle-label" for="mobilsubmenu-toggle3">
+                    <span class="menumobil-open">
+                      <img src="assets/open-this.png" class="open-this" alt="open this icon"/>
+                      OM OS
+                    </span>
+                  </label>
+                  <ul class="mobilsubmenu" id="mobilsubmenu3">
+                    <li><a href="#">OMTALE</a></li>
+                    <li><a href="historien-bag.html">HISTORIEN BAG</a></li>
+                    <li><a href="#">GALLERI</a></li>
+                    <li><a href="#">KONTAKT</a></li>
+                  </ul>
+                </li>
+                <div id="someicons">
+                  <li>
+                    <a href="https://www.facebook.com/kreuzbardk">
+                      <div class="someicons-background">
+                        <img src="assets/facebook-icon-orange.svg" id="navbarfacebookicon" alt="orange facebook icon">
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/kreuzbardk">
+                      <div class="someicons-background">
+                        <img src="assets/instagram-icon-orange.svg" id="navbarinstagramicon" alt="orange instagram icon"/>
+                      </div>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -201,45 +328,46 @@
 </main>
 
 <footer>
-  <div id="footercontent">
-    <div><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4444.186133954044!2d10.195433712118646!3d56.15549547312429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3f8e9146cdff%3A0xff0ae08564b2309d!2zS3JldXpiw6Ry!5e0!3m2!1sda!2sdk!4v1744555961407!5m2!1sda!2sdk" width="250" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-    <div>
-      <h3>ADRESSE</h3>
-      <br>
-      <p>Thorvaldsensgade 5, kld</p>
-      <p>8000 Aarhus</p>
-      <p>Denmark</p>
-    </div>
-    <div>
-      <h3>ÅBNINGSTIDER</h3>
-      <br>
-      <p>Mandag.......................Lukket</p>
-      <p>Tirsdag.........................Lukket</p>
-      <p>Onsdag..........................10-17</p>
-      <p>Torsdag..........................10-17</p>
-      <p>Fredag............................10-17</p>
-      <p>Lørdag........................9.30-17</p>
-      <p>Søndag.......................9.30-17</p>
-    </div>
-    <div>
-      <h3>KONTAKT</h3>
-      <br>
-      <p>Telefon: 26 24 37 65</p>
-      <p>Mail: <a href="mailto:kreuzbardk@gmail.com?subject=Spørgsmål&body=Skriv%20dit%20spørgsmål%20her.">kreuzbardk@gmail.com</a></p>
-      <p>
-        <a href="https://www.tripadvisor.dk/ShowUserReviews-g189530-d26369449-r983818726-Kreuzbar-Aarhus_East_Jutland_Jutland.html">Tripadvisor</a>
-      </p>
-      <p>
-        <a href="https://www.findsmiley.dk/1288850">Smileyrapport</a>
-      </p>
-      <br>
-      <div id="some">
-        <a href="https://www.instagram.com/kreuzbardk/"><img src="assets/instagram-icon-white.svg" alt="Instagram logo"></a>
-        <a href="https://www.facebook.com/kreuzbardk"><img src="assets/facebook-icon-white.svg" alt="Facebook logo"></a>
+    <div id="footercontent">
+      <div><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4444.186133954044!2d10.195433712118646!3d56.15549547312429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3f8e9146cdff%3A0xff0ae08564b2309d!2zS3JldXpiw6Ry!5e0!3m2!1sda!2sdk!4v1744555961407!5m2!1sda!2sdk" width="250" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div>
+        <h4>ADRESSE</h4>
+        <br>
+        <p>Thorvaldsensgade 5, kld</p>
+        <p>8000 Aarhus</p>
+        <p>Denmark</p>
+      </div>
+      <div>
+        <h4>ÅBNINGSTIDER</h4>
+        <br>
+        <p>Mandag.......................Lukket</p>
+        <p>Tirsdag.........................Lukket</p>
+        <p>Onsdag..........................10-17</p>
+        <p>Torsdag..........................10-17</p>
+        <p>Fredag............................10-17</p>
+        <p>Lørdag........................9.30-17</p>
+        <p>Søndag.......................9.30-17</p>
+      </div>
+      <div>
+        <h4>KONTAKT</h4>
+        <br>
+        <p>Telefon: 26 24 37 65</p>
+        <p>Mail: <a href="mailto:kreuzbardk@gmail.com?subject=Spørgsmål&body=Skriv%20dit%20spørgsmål%20her.">kreuzbardk@gmail.com</a></p>
+        <p>
+          <a href="https://www.tripadvisor.dk/ShowUserReviews-g189530-d26369449-r983818726-Kreuzbar-Aarhus_East_Jutland_Jutland.html">Tripadvisor</a>
+        </p>
+        <p>
+          <a href="https://www.findsmiley.dk/1288850">Smileyrapport</a>
+        </p>
+        <br>
+        <div id="some">
+          <a href="https://www.instagram.com/kreuzbardk/"><img src="assets/instagram-icon-white.svg" alt="Instagram logo"></a>
+          <a href="https://www.facebook.com/kreuzbardk"><img src="assets/facebook-icon-white.svg" alt="Facebook logo"></a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
 
 </body>
 </html>
