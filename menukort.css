@@ -24,15 +24,11 @@
     padding: 0.8em;
     border: none;
     cursor: pointer;
-  }
-
-  #filter-knap h2{
     font-size: 18pt;
     font-family: "museo-slab-rounded", sans-serif;
     font-weight: 700;
-    font-style: normal;
+    font-style: normal; 
   }
-
 
   #filtermobil {
     flex-direction: column;
