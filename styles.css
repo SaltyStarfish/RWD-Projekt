@@ -9,12 +9,12 @@
   
 body {
   margin: 0;
-  background-color: #F1DFC7;
-  color: #242424;
+  background-color: #F1DFC7; /* Beige baggrundsfarve */
+  color: #242424; /* Vores primære farve til brødtekst, ikke helt sort, men mørkegrå */
 }
 
 h1, h2, h3, h4{
-  font-family: "museo-slab-rounded", sans-serif;
+  font-family: "museo-slab-rounded", sans-serif; /* Alle headers skal være i museo slab rounded */
   font-style: normal;
 }
 
@@ -41,19 +41,146 @@ h4 {
 }
 
 p {
-  font-family: "neue-kabel", sans-serif;
+  font-family: "neue-kabel", sans-serif; /* Brødtekst skal være i neue kabel */
   font-weight: 400;
   font-style: normal;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /* Ingen understregning på links */
   color: inherit;
   transition: all 0.2s ease;
 }
 
 a:hover {
   color: #E38A2F;
+}
+
+/* ---------------------- Overskrift ---------------------- */
+
+.overskrift-tekst {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+  margin: 30px 0 30px 150px;
+}
+
+.overskrift-tekst h1 {
+  font-size: 70px;
+  position: relative;
+  left: -32px;
+  z-index: 3;
+  color: #242424;
+}
+
+.overskrift {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* ---------------------- Cirkler ---------------------- */
+
+.cirkel {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gul {
+  background-color: #F3C846;
+  width: 198px;
+  height: 198px;
+  z-index: 2;
+  left: 0;
+}
+
+.rød {
+  background-color: #D84D34;
+  width: 162px;
+  height: 162px;
+  z-index: 1;
+  left: 150px;
+}
+
+/* ---------------------- Linje ---------------------- */
+
+.linje {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 150px 0 0;
+}
+
+.linje img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------------------- Responsivt ---------------------- */
+
+@media only screen and (max-width: 768px) {
+.overskrift-tekst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  margin-bottom: -20px !important;
+}
+
+.overskrift-tekst h1 {
+  position: relative;
+  left: -20px;
+  margin-bottom: 40px;
+  z-index: 3;
+}
+
+.cirkel {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.gul {
+  width: 140px;
+  height: 140px;
+  z-index: 2;
+}
+
+.rød {
+  width: 110px;
+  height: 110px;
+  left: 120px;
+  z-index: 1;
+}
+
+.linje {
+  display: none;
+}
+}
+
+@media only screen and (max-width: 1300px) {
+  .linje {
+    display: none;
+  }
+
+  .overskrift {
+    justify-content: center;
+  }
+
+  .overskrift-tekst {
+    margin: 30px auto;
+  }
 }
 
 
