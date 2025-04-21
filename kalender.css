@@ -3,21 +3,21 @@ h4 {
     color: #242424;
 }
 
-.calender-container {
+.calender-container { /* Flere kalendere på samme side skal stå vertikalt */
     display: flex;
     flex-direction: column;
+    margin-top: -2%;
 }
 
 .month {
     width: 100%;
     display: flex;
-    position: relative;
-    justify-content: flex-end;
+    justify-content: flex-end; /* .month baren skal være placeret til højre */
     align-items: center;
     padding-left: 12%;
     padding-right: 12%;
-    margin-bottom: -32px;
-    z-index: 2;
+    margin-bottom: -32px; /* Logoet skal være ovenpå kalenderen, så margin under .month baren er blevet sat negativt */
+    z-index: 2; /* Billedet/logoet skal være foran kalenderen */
 }
 
 .calender-logo {
@@ -36,12 +36,12 @@ table {
     width: 100%;
     padding-left: 15%;
     padding-right: 15%;
-    border-collapse: separate;
-    border-spacing: 0;
+    border-collapse: separate; /* For at undgå at der blev to borders, dvs. at borderen blev meget tykkere end den skulle være, måtte jeg bruge separate her, da collapse ikke fungerede som jeg ville have det */ 
+    border-spacing: 0; /* Og derefter border-spacing for at undgå at der blev plads mellem borderne og cellerne */
 }
 
 .calender p {
-    font-family: "museo-slab-rounded", sans-serif;
+    font-family: "museo-slab-rounded", sans-serif; /* En undtagelse for p, som normalt bruges til brødtekst, og derfor er Neue Kabel */
     font-weight: 900;
     font-size: 14pt;
     padding-left: 3px;
@@ -83,13 +83,15 @@ td {
     padding-bottom: 10px;
 }
 
-.event-icon-container span {
+.event-icon-container span { /* Span og p kunne også være byttet om, men det blev sådan her, så span bruges til minimal tekst i selv kalenderen */
     font-family: "neue kabel", sans-serif;
     font-weight: 400;
     font-size: 9pt;
     color: #242424;
     text-align: center;
 }
+
+/* Kalenderen har kun afrundet hjørne over til højre og nederst til venstre, og en 4px solid border hele vejen rundt */
 
 .week-column {
     border-top: 4px solid #F3C846;
@@ -132,21 +134,21 @@ td {
 }
 
 .topleft {
-    border-radius: 77px 0 0 0;
+    border-radius: 77px 0 0 0; /* Kun den øverste venstre kant skal være rund */
     border-left: 4px solid #F3C846;
     border-top: 4px solid #F3C846;
 }
 
 .bottomright {
-    border-radius: 0 0 77px 0;
+    border-radius: 0 0 77px 0; /* Kun den nederste højre kant skal være rund */
     border-right: 4px solid #F3C846;
     border-bottom: 4px solid #F3C846;
     background-color: #D9D9D9;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) { /* Kalenderen begyndte at se funky ud og meget presset ud, så der er tilføjet et ekstra breakpoint */
     .month {
-        margin-bottom: -28px;
+        margin-bottom: -28px; /* Størrelsesforholdene har ændret sig lidt, så negativen skal være mindre */
     }
     
     .calender-logo {
@@ -154,11 +156,11 @@ td {
     }
 
     .calender th {
-        font-size: 15pt;
+        font-size: 15pt; /* Månedenavnene stak ud over TH, så fontstørrelsen er sat ned */
     }
 
     .calender td {
-        height: 110px;
+        height: 110px; /* Højden på cellerne er sat ned */
     }
 
     .event-icon {
@@ -166,36 +168,33 @@ td {
     }
 
     .event-icon-container span {
-        font-size: 8pt;
+        font-size: 8pt; /* Al tekststørrelse i kalenderen er også sat ned */
     }
 
     .topleft {
-        border-radius: 55px 0 0 0;
+        border-radius: 55px 0 0 0; /* Kun den øverste venstre kant skal være rund, men mindre end ved fuld skærm */
         border-left: 4px solid #F3C846;
         border-top: 4px solid #F3C846;
     }
     
     .bottomright {
-        border-radius: 0 0 55px 0;
+        border-radius: 0 0 55px 0; /* Kun den nederste højre kant skal være rund, men mindre end ved fuld skærm */
         border-right: 4px solid #F3C846;
         border-bottom: 4px solid #F3C846;
         background-color: #D9D9D9;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px) { /* Breakpoint vi blev bedt om at lave */
     .month {
         width: 100%;
         display: flex;
-        position: relative;
-        justify-content: flex-end;
-        align-items: center;
-        padding-left: 4%;
+        padding-left: 4%; /* Da størrelsesforholdene igen har ændret sig, skal padding være mindre */
         padding-right: 4%;
-        margin-bottom: -20px;
+        margin-bottom: -20px; /* Og det skal margin i negativen også */
     }
 
-    .month h4 {
+    .month h4 { /* Månedenavne skal være mindre i responsive */
         font-family: "museo-slab-rounded", sans-serif;
         font-weight: 900;
         font-size: 18pt;
@@ -209,7 +208,6 @@ td {
     .calender {
         width: 100%;
         display: flex;
-        justify-content: center;
     }
 
     .calender table {
@@ -218,7 +216,7 @@ td {
         padding-right: 6%;
     }
 
-    .calender th {
+    .calender th { /* Ugenavnene skal være mindre i responsive */
         font-size: 13pt;
     }
 
@@ -226,14 +224,12 @@ td {
         height: 90px;
     }
 
-    .calender p {
-        font-family: "museo-slab-rounded", sans-serif;
-        font-weight: 900;
+    .calender p { /* Teksten i cellerne skal være mindre, i dette tilfælde dagenumrene */
         font-size: 10pt;
         padding-left: 3px;
     }
 
-    .event-icon-container span {
+    .event-icon-container span { /* Teksten i cellerne skal være mindre, i dette tilfælde event-tekst */
         font-size: 7pt;
     }
     
@@ -250,7 +246,7 @@ td {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:500px) { /* Breakpointet var ikke nødvendigt, men fik lyst til at tilføje det alligevel */
     .kalender th {
         font-size: 9pt;
         height: 35px;
