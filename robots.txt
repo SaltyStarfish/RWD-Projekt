@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Disallow:
 
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://www.sarahnevin.dk/sitemap.xml
