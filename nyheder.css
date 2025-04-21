@@ -16,18 +16,18 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    width: 33%;
+    padding: 15px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 #nyheder-box1 {
     background-color: white;
-    border-radius: 77px 0 0 0;
+    border-radius: 77px 0 0 0; /* Kun den øverste venstre kant skal være rund */
     border-left: 3px solid #f3c846;
     border-top: 3px solid #f3c846;
     border-bottom: 3px solid #f3c846;
-    width: 33%;
-    padding: 15px;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 #nyheder-box2 {
@@ -35,26 +35,18 @@
     color: white;
     border-top: 3px solid #f3c846;
     border-bottom: 3px solid #f3c846;
-    width: 33%;
-    padding: 15px;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
     
 #nyheder-box3 {
     background-color: white;
-    border-radius: 0 0 77px 0;  
+    border-radius: 0 0 77px 0; /* Kun den nederste højre kant skal være rund */
     border-right: 3px solid #f3c846;
     border-top: 3px solid #f3c846;       
     border-bottom: 3px solid #f3c846;
-    width: 33%;
-    padding: 15px;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 .nyheder-text {
-    margin: 3%;
+    margin: 5%;
 }
 
 #nyheder-text1 {
@@ -92,7 +84,7 @@
 @media screen and (max-width:768px) {
     .nyheder-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /*- Content placeres vertikalt i responsive -*/
         justify-content: center;
         align-items: center;
         margin: 0 auto;
@@ -101,83 +93,63 @@
     }
 
     .nyheder-box h3 {
-        font-size: 15pt;
+        font-size: 16pt; /* Overskrifterne skal være 16pt i responsive */
     }
 
     .nyheder-box p {
-        font-size: 10pt;
+        font-size: 10pt; /* Brødteksten skal være 10pt i responsive */
     }
 
     .nyheder-box {
         display: flex;
-        flex-direction: row;
+        flex-direction: row; /*- Tekst og billeder skal placeres horisontalt, i stedet for vertikalt, i responsive -*/
         align-items: center;
         justify-content: space-between;
         text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 7%;
+        border-right: 4px solid #F3C846;
+        border-left: 4px solid #F3C846;
     }
 
     #nyheder-box1 {
-        border-radius: 42px 0 0 0;
-        border-left: 4px solid #F3C846;
+        border-radius: 42px 0 0 0; /* Kun den øverste venstre kant skal være rund, mindre rund i responsive */
         border-top: 4px solid #F3C846;
         border-bottom: 0px solid;
-        border-right: 4px solid #F3C846;
-        width: 100%;
-        height: auto;
-        padding: 5%;
     }
 
     #nyheder-box2 {
         border-radius: 0 0 0 0;
-        border-left: 4px solid #F3C846;
         border-top: 0px solid;
         border-bottom: 0px solid;
-        border-right: 4px solid #F3C846;
-        width: 100%;
-        height: auto;
-        padding: 5%;
     }
 
     #nyheder-box3 {
-        border-radius: 0 0 42px 0;
-        border-left: 4px solid #F3C846;
+        border-radius: 0 0 42px 0; /* Kun den nederste højre kant skal være rund, mindre rund i responsive */
         border-top: 0px solid;
         border-bottom: 4px solid #F3C846;
-        border-right: 4px solid #F3C846;
-        width: 100%;
-        height: auto;
-        padding: 7%;
+
     }
 
     #nyheder-text1,
-    #nyheder-text3 {
-        max-width: 55%;
+    #nyheder-text3 { /* Nyheder-text 1 og 3 er identiske */
+        max-width: 55%; /* Tekstdelene må kun være 55% brede, så billederne kan være mindst 40% */
         height: auto;
-        float: right;
-        text-align: left;
+        text-align: left; /* Teksten skal start fra venstre */
         padding-left: 5%;
     }
 
     #nyheder-text2 {
         max-width: 55%;
-        float: left;
         text-align: left;
         height: auto;
         padding-right: 5%;
     }
 
-    #nyheder-img1,
-    #nyheder-img3 {
-        float: left;
-    }
-
-    #nyheder-img2 {
-        float: right;
-    }
-
-    .nyheder-img {
-        max-width: 40%;
-        height: auto;
+    .nyheder-img { 
+        max-width: 40%; /* Billederne skal være 40% brede */
+        height: auto; /* Resten sørger for at billederne vertiaklt centrerer sig i boksen */
         display: flex;
         align-items: center;
     }

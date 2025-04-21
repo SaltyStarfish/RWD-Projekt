@@ -55,7 +55,7 @@ nav a {
 }
 
 #mobilmenu-toggle,
-#mobilmenu-toggle2 {
+#mobilmenu-toggle2 { /* Gemmer de små checkboxes */
   display: none;
 }
 
@@ -115,17 +115,15 @@ nav a {
 }
  
 /* ---------------------- RESPONSIVE HEADER ---------------------- */
-#navmobil {
+
+#navmobil { /* Mobil menu gemmes som standard */
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-#hamburger {
+#hamburger { /* Looket af vores burger menu ikon */
   height: 90px;
   cursor: pointer;
   display: none;
-  text-align: right;
   top: 1%;
   right: 1%;
   padding: 0.5em 1em;
@@ -133,24 +131,25 @@ nav a {
 
 #mobilsubmenu-toggle1,
 #mobilsubmenu-toggle2,
-#mobilsubmenu-toggle3 {
+#mobilsubmenu-toggle3 { /* Gemmer de små runde radio boxes */
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  #navdesktop {
-    display: none;
+@media only screen and (max-width: 768px) { /* Skærm størrelse 768px, men der skal være et ekstra breakpoint ved 550px, hvor alt skal laves lidt mindre */
+  
+  #navdesktop { 
+    display: none; /* Desktop menu gemmes*/
   }
 
   #hamburger {
-    display: flex;
+    display: flex; /* Mobil menu vises */
     height: 80px;
     cursor: pointer;
     padding: 0.5em;
   }
 
   #mobilmenu-toggle:checked ~ nav#navmobil {
-    display: flex;
+    display: flex; /* Burger checkmenu åbnes */
   }
 
   #navbarmobillogo {
@@ -158,7 +157,7 @@ nav a {
     height: auto;
   }
 
-  #close-icon {
+  #close-icon { /* Looket af vores pil ikon */
     display: flex;
     width: 80px;
     cursor: pointer;
@@ -167,89 +166,98 @@ nav a {
   #navmobil {
     display: none;
     position: fixed;
-    flex-direction: column;
+    flex-direction: column; /* Content placeres vertikalt */
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #F3C84695;
-    backdrop-filter: blur(3px);
-    z-index: 1000;
+    height: 100%; /* Overlay fylder hele skærmen */
+    width: 100%; /* Overlay fylder hele skærmen */
+    background-color: #F3C84695; /* Semi-transparent gul baggrund */
+    backdrop-filter: blur(3px); /* Content bag overlay menu bliver sløret */
+    z-index: 1000; /* Overlay menu er ovenpå alt andet, når den er åben */
   }
 
   #topbarmobil {
-    width: 100%;
+    width: 100%; /* Topbar fylder hele bredden */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Logo og luk ikon skal være på hver sin side */
     align-items: center;
     margin: 0;
-    padding: 2%;
+    padding: 2%; /* Lidt padding, så ikonerne ikke sidder helt op ad kanten */
   }
 
-  #navmobil-content {
+  #navmobil-content { /* Resten af menuen efter ikonerne ved toppen */
     display: flex;
-    flex-direction: column;
-    justify-content: right;
+    flex-direction: column; /* Indholdet placeres vertikalt */
+    justify-content: right; /* Indholdet skal være til højre */
     height: 100%;
   }
 
   .navmobil_links {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Links skal placeres vertikalt */
     align-items: flex-end;
     width: 100%;
-    gap: 1em;
-    padding-right: 2%;
+    gap: 1em; /* Tilføjer lidt afstand mellem links */
+    padding-right: 2%; /* Lidt padding til højre, så links ikke sidder helt op ad kanten */
     margin-top: 2em;
   }
 
   .navmobil_links a {
     display: block;
-    text-decoration: none;
-    font-family: "museo-slab-rounded", sans-serif;
     font-size: 20pt;
     font-weight: 900;
     letter-spacing: 1px;
-    color: #E38A2F;
+    color: #E38A2F; /* Look for menu links */
     background-color: #ffffff;
     border: 5px solid #E38A2F;
-    text-align: right;
+    text-align: right; /* Selve teksten skal sidde til højre, for at gøre plads til pil ikon */
     padding: 0.3em 1em;
     margin: -0.2em 0;
     border-radius: 40px;
     width: 250px;
   }
 
-  #someicons {
+  .navmobil_links a:hover { /* Unødvendigt for mobil, men et lille ekstra touch til desktop */
+    background-color: #E38A2F; 
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+  }
+
+  #someicons ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* SoME ikoner skal være spredt */
     align-items: center;
-    width: 250px;
-    padding-right: 2%;
+    width: 250px; /* Men kun over samme bredde som links ovenfor */
     margin: 0;
+  }
+
+  #someicons li {
+    margin: 0;
+    width: 80px;
+    height: auto; /* Denne var vigtig for at få ikonerne til at være lige nedenunder menu links */
   }
 
   #someicons a {
-    background-color: transparent;
-    border: none;
-    width: 65px;
+    background-color: transparent; /* Ingen baggrundsfarve ellers så de mærkelige ud pga. look af menu links */
+    border: none; /* Samme her, de får deres egen border og baggrundsfarve vha. en "wrapper" */
+    width: 80px;
+    height: auto;
     margin: 0;
     padding: 0;
-    justify-content: center;
     align-items: center;
   }
 
-  .someicons-background {
+  .someicons-background { /* Baggrund til SoMe-ikoner: hvid baggrund og orange border aka en "wrapper" */
     display: flex;
     background-color: #ffffff;
-    border-radius: 50%;
+    border-radius: 50%; /* Gør ikonerne helt runde */
     border: 5px solid #E38A2F;
     width: 80px;
     height: 80px;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* SoMe-ikonerne skal være centreret i deres "wrapper" */
+    align-items: center; /* SoMe-ikonerne skal være centreret i deres "wrapper" */
     padding: 0;
     margin: 0;
   }
@@ -260,37 +268,13 @@ nav a {
     width: auto;
   }
 
-  .navmobil_links a:hover {
-    background-color: #E38A2F;
-    color: #ffffff;
-    transition: 0.3s ease-in-out;
-  }
-
-  #menumobil-menu {
-    display: block;
-    text-decoration: none;
-    font-family: "museo-slab-rounded", sans-serif;
-    font-size: 20pt;
-    font-weight: 900;
-    letter-spacing: 1px;
-    color: #E38A2F;
-    background-color: #ffffff;
-    border: 5px solid #E38A2F;
-    text-align: right;
-    padding: 0.3em 1em;
-    margin: -0.2em 0;
-    border-radius: 40px;
-    width: 250px;
-    height: 63px;
-  }
-
   .open-this {
     height: 22px;
-    rotate: 90deg;
-    transition: transform 0.2s ease;
+    rotate: 90deg; /* Pil ikon .png pejer som standard ned og skal derfor drejes 90 grader */
+    transition: transform 0.2s ease; /* Rotation af pil ikon har en kort transition */
   }
 
-  .mobil-toggle-label {
+  .mobil-toggle-label { /* Label for radio box; i dette tilfælde en span og et pil ikon */
     display: flex;
     align-items: center;
     gap: 0.5em;
@@ -299,28 +283,26 @@ nav a {
 
   #mobilsubmenu-toggle1:checked ~ label[for="mobilsubmenu-toggle1"] + #mobilsubmenu1,
   #mobilsubmenu-toggle2:checked ~ label[for="mobilsubmenu-toggle2"] + #mobilsubmenu2,
-  #mobilsubmenu-toggle3:checked ~ label[for="mobilsubmenu-toggle3"] + #mobilsubmenu3 {
+  #mobilsubmenu-toggle3:checked ~ label[for="mobilsubmenu-toggle3"] + #mobilsubmenu3 { /* Undermenu (dropmenu) åbnes når der klikkes på label */
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.5em;
+    flex-direction: column; /* Indholdet placeres vertikalt */
+    gap: 0.5em; /* Gap der matcher hovedpunkterne i burger menuen */
   }
 
   #mobilsubmenu-toggle1:checked + label .open-this, 
   #mobilsubmenu-toggle2:checked + label .open-this, 
   #mobilsubmenu-toggle3:checked + label .open-this {
-    transform: rotate(180deg);
+    transform: rotate(180deg); /* Vores pil-ikon drejes 180 grader når menuen åbnes */
   }
 
-  .menumobil-open {
+  .menumobil-open { /* MENU, EVENTS og OM OS, som har undermenuer (dropdowns) */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Tekst og pil ikon skal være på hver sin side af den hvide knap */
     align-items: center;
-    text-decoration: none;
-    font-family: "museo-slab-rounded", sans-serif;
+    font-family: "museo-slab-rounded", sans-serif; /* Span har ingen fonttype i Styles.css */
     font-size: 20pt;
     font-weight: 900;
-    letter-spacing: 1px;
+    letter-spacing: 1px; /* Span skal ligne de andre links, så nedenfor er samme inputs som findes i .navmobil_links a */
     color: #E38A2F;
     background-color: #ffffff;
     border: 5px solid #E38A2F;
@@ -332,31 +314,32 @@ nav a {
     height: 63px;
   }
 
-  .mobilsubmenu {
-    display: none;
-    position: absolute;
-    right: 260px;
+  .dropdownmobil { /* Hver li har en span i, som er en knap til en dropdown menu */
+    position: relative; /* Li med position:relative bestemmer hvor .mobilsubmenu (undermenu/dropdown menu) er placeret */
+  }
+
+  .mobilsubmenu { /* Undermenu (dropmenu) */
+    display: none; /* Skjult som standard */
+    position: absolute; /* Positioneret i forhold til den overordnede li */
+    right: 260px; /* Placeret til højre for den overordnede li */
     top: 0;
-    border-radius: 40px;
     z-index: 999;
   }
 
   .mobilsubmenu a {
     display: flex;
-    font-size: 15pt;
-    font-weight: 800;
+    font-size: 15pt; /* Er en smule mindre i forhold til hovedpunkterne i burger menuen */
+    font-weight: 800; /* Og font weight er en smule lavere */
     letter-spacing: 1px;
-    text-align: center;
+    text-align: center; /* Teksten skal være centreret inde i knapperne */
     align-items: center;
     justify-content: center;
     margin-bottom: 0.1em;
-    width: 240px;
+    width: 240px; /* Lidt smallere end hovedpunkterne i burger menuen */
     height: 63px;
   }
 
-  .dropdownmobil {
-    position: relative;
-  }
+
 }
 
 /*-----------------------Footer----------------------------------*/
