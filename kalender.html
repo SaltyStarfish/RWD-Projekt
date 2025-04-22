@@ -14,7 +14,7 @@
     <header>
         <div class="header-container">
             <div class="kreuzbar">
-                <a href="/">
+                <a href="index.html">
                     <img src="assets/kreuzbar-red.svg" alt="KREUZBÄR logo" class="logo_header">
                 </a>
             </div>
@@ -31,18 +31,18 @@
                             <li class="dropdown">
                                 <a href="#">MENU</a>
                                     <ul class="menu">
-                                        <li><a href="menukort">MENUKORT</a></li>
+                                        <li><a href="menukort.html">MENU</a></li>
                                         <li><a href="#">TAKEAWAY</a></li>
                                     </ul>
                             </li>
                             <li>
-                                <a href="nyheder">NYHEDER</a>
+                                <a href="nyheder.html">NYHEDER</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#">EVENTS</a>
                                 <ul class="menu">
                                     <li><a href="#">LEJ LOKALE</a></li>
-                                    <li><a href="kalender">KALENDER</a></li>
+                                    <li><a href="kalender.html">KALENDER</a></li>
                                     <li><a href="#">CATERING</a></li>
                                 </ul>
                             </li>
@@ -50,7 +50,7 @@
                                 <a href="#">OM OS</a>
                                     <ul class="menu">
                                         <li><a href="#">OMTALE</a></li>
-                                        <li><a href="historien-bag">HISTORIEN BAG</a></li>
+                                        <li><a href="historien-bag.html">HISTORIEN BAG</a></li>
                                         <li><a href="#">GALLERI</a></li>
                                         <li><a href="#">KONTAKT</a></li>
                                     </ul>
@@ -68,97 +68,97 @@
                     </nav>
                 </div>
     
-    <!-- RESPONSIVE HEADER -->
-            
-                <div class="navmobil-container">
-                    <input type="checkbox" id="mobilmenu-toggle"> <!-- Første menu er en checkbox (overlay) menu, der popper frem, når man tapper på burgerikonet -->
-                    <label for="mobilmenu-toggle">
-                        <img src="assets/burgericon-white.png" id="hamburger" alt="hamburger icon">
-                    </label>
-      
-                    <nav id="navmobil"> <!-- Burgermenuen har øverst et logo og en lukkeknap, så man kan navigere til forsiden eller lukke burgermenuen igen -->
-                        <div id="topbarmobil">
-                            <img src="assets/logo-blue.png" id="navbarmobillogo" alt="blåt logo">
-                            <label for="mobilmenu-toggle">
-                                <img src="assets/close-orange.png" id="close-icon" alt="close icon">
-                            </label>
-                        </div>
+<!-- RESPONSIVE HEADER -->
         
-                        <div id="navmobil-content"> <!-- Derefter alt dens content, dvs. links til de forskellige sider -->
-                            <ul class="navmobil_links">
-                                <li>
-                                    <a href="#">BOOK</a>
-                                </li>
-                                <li class="dropdownmobil">
-                                    <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle1"> <!-- Herunder 3 radio menuer, også kaldet submenuer - vi har valgt radio fordi der kun kan være én menu åben ad gangen, og fordi vi ikke har lært JavaScript -->
-                                    <label class="mobil-toggle-label" for="mobilsubmenu-toggle1">
-                                        <span class="menumobil-open">
-                                            <img src="assets/open-this.png" class="open-this" alt="open this icon">
-                                            MENU
-                                        </span>
-                                    </label>
-                                    <ul class="mobilsubmenu" id="mobilsubmenu1">
-                                        <li><a href="menukort">MENUKORT</a></li>
-                                        <li><a href="#">TAKEAWAY</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="nyheder">NYHEDER</a>
-                                </li>
-                                <li class="dropdownmobil">
-                                    <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle2"> <!-- Den 2. radio menu -->
-                                    <label class="mobil-toggle-label" for="mobilsubmenu-toggle2">
-                                        <span class="menumobil-open">
-                                            <img src="assets/open-this.png" class="open-this" alt="open this icon">
-                                            EVENTS
-                                        </span>
-                                    </label>
-                                    <ul class="mobilsubmenu" id="mobilsubmenu2">
-                                        <li><a href="#">LEJ LOKALE</a></li>
-                                        <li><a href="kalender">KALENDER</a></li>
-                                        <li><a href="#">CATERING</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdownmobil">
-                                    <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle3"> <!-- Den 3. radio menu -->
-                                    <label class="mobil-toggle-label" for="mobilsubmenu-toggle3">
-                                        <span class="menumobil-open">
-                                            <img src="assets/open-this.png" class="open-this" alt="open this icon">
-                                            OM OS
-                                        </span>
-                                    </label>
-                                    <ul class="mobilsubmenu" id="mobilsubmenu3">
-                                        <li><a href="#">OMTALE</a></li>
-                                        <li><a href="historien-bag">HISTORIEN BAG</a></li>
-                                        <li><a href="#">GALLERI</a></li>
-                                        <li><a href="#">KONTAKT</a></li>
-                                    </ul>
-                                </li>
-                                <li id="someicons"> <!-- Til sidst har vi ikoner til deres SoMe - Facebook og Instagram - i deres egen <li> for at gøre det nemmere at placere dem i forhold til content ovenfor -->
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.facebook.com/kreuzbardk" target="_blank">
-                                                <div class="someicons-background"> <!-- Hvert ikon kom i en "wrapper" for at give dem en rund hvis baggrund med en orange kant, og for at de var nemmere at placere -->
-                                                    <img src="assets/facebook-icon-orange.svg" id="navbarfacebookicon" alt="orange facebook icon">
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.instagram.com/kreuzbardk" target="_blank">
-                                                <div class="someicons-background">
-                                                    <img src="assets/instagram-icon-orange.svg" id="navbarinstagramicon" alt="orange instagram icon">
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+<div class="navmobil-container">
+    <input type="checkbox" id="mobilmenu-toggle"> <!-- Første menu er en checkbox (overlay) menu, der popper frem, når man tapper på burgerikonet -->
+    <label for="mobilmenu-toggle">
+      <img src="assets/burgericon-white.png" id="hamburger" alt="Hamburgerikon">
+    </label>
+
+    <nav id="navmobil"> <!-- Burgermenuen har øverst et logo og en lukkeknap, så man kan navigere til forsiden eller lukke burgermenuen igen -->
+      <div id="topbarmobil">
+        <img src="assets/logo-blue.png" id="navbarmobillogo" alt="Blåt logo">
+        <label for="mobilmenu-toggle">
+          <img src="assets/close-orange.png" id="close-icon" alt="Lukkeikon">
+        </label>
+      </div>
+
+      <div id="navmobil-content"> <!-- Derefter alt dens content, dvs. links til de forskellige sider -->
+        <ul class="navmobil_links">
+          <li>
+            <a href="#">BOOK</a>
+          </li>
+          <li class="dropdownmobil">
+            <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle1"> <!-- Herunder 3 radio menuer, også kaldet submenuer - vi har valgt radio fordi der kun kan være én menu åben ad gangen, og fordi vi ikke har lært JavaScript -->
+            <label class="mobil-toggle-label" for="mobilsubmenu-toggle1">
+              <span class="menumobil-open">
+                <img src="assets/open-this.png" class="open-this" alt="Åbneikon">
+                  MENU
+              </span>
+            </label>
+            <ul class="mobilsubmenu" id="mobilsubmenu1">
+              <li><a href="menukort.html">MENU KORT</a></li>
+              <li><a href="#">TAKEAWAY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="nyheder.html">NYHEDER</a>
+          </li>
+          <li class="dropdownmobil">
+            <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle2"> <!-- Den 2. radio menu -->
+            <label class="mobil-toggle-label" for="mobilsubmenu-toggle2">
+              <span class="menumobil-open">
+                <img src="assets/open-this.png" class="open-this" alt="Åbneikon">
+                EVENTS
+              </span>
+            </label>
+            <ul class="mobilsubmenu" id="mobilsubmenu2">
+              <li><a href="#">LEJ LOKALE</a></li>
+              <li><a href="kalender.html">KALENDER</a></li>
+              <li><a href="#">CATERING</a></li>
+            </ul>
+          </li>
+          <li class="dropdownmobil">
+            <input type="radio" name="mobilsubmenu-toggle" id="mobilsubmenu-toggle3"> <!-- Den 3. radio menu -->
+            <label class="mobil-toggle-label" for="mobilsubmenu-toggle3">
+              <span class="menumobil-open">
+                <img src="assets/open-this.png" class="open-this" alt="Åbneikon">
+                OM OS
+              </span>
+            </label>
+            <ul class="mobilsubmenu" id="mobilsubmenu3">
+              <li><a href="#">OMTALE</a></li>
+              <li><a href="historien-bag.html">HISTORIEN BAG</a></li>
+              <li><a href="#">GALLERI</a></li>
+              <li><a href="#">KONTAKT</a></li>
+            </ul>
+          </li>
+          <li id="someicons"> <!-- Til sidst har vi ikoner til deres SoMe - Facebook og Instagram - i deres egen <li> for at gøre det nemmere at placere dem i forhold til content ovenfor -->
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/kreuzbardk">
+                  <div class="someicons-background"> <!-- Hvert ikon kom i en "wrapper" for at give dem en rund hvis baggrund med en orange kant, og for at de var nemmere at placere -->
+                    <img src="assets/facebook-icon-orange.svg" id="navbarfacebookicon" alt="Orange Facebook Ikon">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/kreuzbardk">
+                  <div class="someicons-background">
+                    <img src="assets/instagram-icon-orange.svg" id="navbarinstagramicon" alt="Orange Instagram Ikon">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+</div>
+</header>
       
 
     <main>
@@ -176,7 +176,7 @@
         <div class="calender-container">
             <div class="month">
                 <h4>APRIL</h4>
-                <img src="assets/logo-blue.png" class="calender-logo" alt="blue logo">
+                <img src="assets/logo-blue.png" class="calender-logo" alt="Blåt logo">
             </div>
 
             <div class="calender"> <!-- Vi ved ikke hvordan man sætter kalendere ind, så vi har faket en kalender med en tabel i stedet -->
@@ -209,7 +209,7 @@
                         <td><p>11</p></td>
                         <td><p>12</p>
                             <div class="event-icon-container">
-                                <img src="assets/microphone-icon.png" class="event-icon" alt="mic icon"> <!-- Vi ville gerne have tilføjet en pop-up, hvorpå der står info om events, når ikonerne klikkes på, men det bruges der Java til, hvilket vi ikke har lært endnu -->
+                                <img src="assets/microphone-icon.png" class="event-icon" alt="Mic ikon"> <!-- Vi ville gerne have tilføjet en pop-up, hvorpå der står info om events, når ikonerne klikkes på, men det bruges der Java til, hvilket vi ikke har lært endnu -->
                             <span>Poesi-event kl. 15-18</span>
                             </div>    
                         </td>
@@ -221,14 +221,14 @@
                         <td><p>15</p></td>
                         <td><p>16</p>
                             <div class="event-icon-container">
-                                <img src="assets/closed-icon.png" class="event-icon" alt="closed sign icon">
+                                <img src="assets/closed-icon.png" class="event-icon" alt="Ikon for lukket skilt">
                                 <span>Vi holder lukket</span>
                             </div>
                         </td>    
                         <td><p>17</p></td>
                         <td><p>18</p>
                             <div class="event-icon-container">
-                                <img src="assets/guitar-icon.png" class="event-icon" alt="guitar icon">
+                                <img src="assets/guitar-icon.png" class="event-icon" alt="Guitarikon">
                                 <span>Kælderkoncert kl. 20</span>
                             </div>
                         </td>
@@ -242,7 +242,7 @@
                         <td><p>23</p></td>
                         <td><p>24</p>
                             <div class="event-icon-container">
-                                <img src="assets/knitting-icon.png" class="event-icon" alt="knitting icon">
+                                <img src="assets/knitting-icon.png" class="event-icon" alt="Strikkeikon">
                                 <span>Strikke-event kl. 15-18</span>
                             </div>
                         </td>
@@ -265,7 +265,7 @@
 
             <div class="month"> <!-- Måneden gentages, så maj også vises, derfor der ikke er brug af ID så meget, men mest class, i ovenstående HTML -->
                 <h4>MAJ</h4> <!-- Maj har 31 dage og starter på en torsdag, så sammensætningen ser en smule anderledes ud end april, men fremgangsmåden er den samme -->
-                <img src="assets/logo-blue.png" class="calender-logo" alt="blue logo">
+                <img src="assets/logo-blue.png" class="calender-logo" alt="Blåt logo">
             </div>
         
             <div class="calender">
@@ -296,7 +296,7 @@
                         <td><p>7</p></td>
                         <td><p>8</p>
                             <div class="event-icon-container">
-                                <img src="assets/closed-icon.png" class="event-icon" alt="closed sign icon">
+                                <img src="assets/closed-icon.png" class="event-icon" alt="Ikon for lukket skilt">
                                 <span>Vi holder lukket</span>
                             </div>
                         </td>
@@ -312,7 +312,7 @@
                         <td><p>15</p></td>
                         <td><p>16</p>
                             <div class="event-icon-container">
-                                <img src="assets/guitar-icon.png" class="event-icon" alt="guitar icon">
+                                <img src="assets/guitar-icon.png" class="event-icon" alt="Guitarikon">
                                 <span>Kælderkoncert kl. 20</span>
                             </div>
                         </td>
@@ -336,7 +336,7 @@
                         <td class="day-column4"><p>28</p></td>
                         <td class="day-column4"><p>29</p>                        
                             <div class="event-icon-container">
-                                <img src="assets/knitting-icon.png" class="event-icon" alt="knitting icon">
+                                <img src="assets/knitting-icon.png" class="event-icon" alt="Strikkeikon">
                                 <span>Strikke-event kl. 15-18</span>
                             </div>
                         </td>
@@ -376,17 +376,17 @@
                 <h4>KONTAKT</h4>
                 <br>
                 <p>Telefon: 26 24 37 65</p>
-                <p>Mail: <a href="mailto:kreuzbardk@gmail.com?subject=Spørgsmål&body=Skriv%20dit%20spørgsmål%20her." target="_blank">kreuzbardk@gmail.com</a></p>
+                <p>Mail: <a href="mailto:kreuzbardk@gmail.com?subject=Spørgsmål&body=Skriv%20dit%20spørgsmål%20her.">kreuzbardk@gmail.com</a></p>
                 <p>
-                    <a href="https://www.tripadvisor.dk/ShowUserReviews-g189530-d26369449-r983818726-Kreuzbar-Aarhus_East_Jutland_Jutland.html" target="_blank">Tripadvisor</a>
+                    <a href="https://www.tripadvisor.dk/ShowUserReviews-g189530-d26369449-r983818726-Kreuzbar-Aarhus_East_Jutland_Jutland.html">Tripadvisor</a>
                 </p>
                 <p>
-                    <a href="https://www.findsmiley.dk/1288850" target="_blank">Smileyrapport</a>
+                    <a href="https://www.findsmiley.dk/1288850">Smileyrapport</a>
                 </p>
                 <br>
                 <div id="some">
-                    <a href="https://www.instagram.com/kreuzbardk/" target="_blank"><img src="assets/instagram-icon-white.svg" alt="Instagram logo"></a>
-                    <a href="https://www.facebook.com/kreuzbardk" target="_blank"><img src="assets/facebook-icon-white.svg" alt="Facebook logo"></a>
+                    <a href="https://www.instagram.com/kreuzbardk/"><img src="assets/instagram-icon-white.svg" alt="Instagram logo"></a>
+                    <a href="https://www.facebook.com/kreuzbardk"><img src="assets/facebook-icon-white.svg" alt="Facebook logo"></a>
                 </div>
             </div>
         </div>
