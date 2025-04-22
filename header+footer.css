@@ -155,12 +155,14 @@ nav a {
   #navbarmobillogo {
     width: 80px;
     height: auto;
+    cursor: pointer;
   }
 
   #close-icon { /* Looket af vores pil ikon */
     display: flex;
     width: 80px;
-    cursor: pointer;
+    height: auto;
+    cursor: pointer; 
   }
 
   #navmobil {
@@ -171,6 +173,7 @@ nav a {
     left: 0;
     height: 100%; /* Overlay fylder hele skærmen */
     width: 100%; /* Overlay fylder hele skærmen */
+    padding: 2%;
     background-color: #F3C84695; /* Semi-transparent gul baggrund */
     backdrop-filter: blur(3px); /* Content bag overlay menu bliver sløret */
     z-index: 1000; /* Overlay menu er ovenpå alt andet, når den er åben */
@@ -182,7 +185,7 @@ nav a {
     justify-content: space-between; /* Logo og luk ikon skal være på hver sin side */
     align-items: center;
     margin: 0;
-    padding: 2%; /* Lidt padding, så ikonerne ikke sidder helt op ad kanten */
+
   }
 
   #navmobil-content { /* Resten af menuen efter ikonerne ved toppen */
@@ -206,7 +209,7 @@ nav a {
   .navmobil_links a {
     display: block;
     font-size: 20pt;
-    font-weight: 900;
+    font-weight: 800;
     letter-spacing: 1px;
     color: #E38A2F; /* Look for menu links */
     background-color: #ffffff;
@@ -301,7 +304,7 @@ nav a {
     align-items: center;
     font-family: "museo-slab-rounded", sans-serif; /* Span har ingen fonttype i Styles.css */
     font-size: 20pt;
-    font-weight: 900;
+    font-weight: 800;
     letter-spacing: 1px; /* Span skal ligne de andre links, så nedenfor er samme inputs som findes i .navmobil_links a */
     color: #E38A2F;
     background-color: #ffffff;
@@ -338,8 +341,91 @@ nav a {
     width: 240px; /* Lidt smallere end hovedpunkterne i burger menuen */
     height: 63px;
   }
+}
+
+/*------------------- RESPONSIV MOBIL ---------------------------*/
+
+@media only screen and (max-width: 500px) {
 
 
+  #hamburger {
+    height: 50px;
+    padding: 0.5em;
+  }
+
+  #navbarmobillogo {
+    width: 50px;
+    height: auto;
+  }
+
+  #close-icon { /* Looket af vores pil ikon */
+    width: 50px;
+    height: auto;
+  }
+
+  .navmobil_links {
+    width: 100%;
+    gap: 1em; /* Tilføjer lidt afstand mellem links */
+    padding-right: 2%; /* Lidt padding til højre, så links ikke sidder helt op ad kanten */
+    margin-top: 2em;
+  }
+
+  .navmobil_links a {
+    font-size: 14pt;
+    font-weight: 700;
+    width: 170px;
+    height: auto;
+    border: 3px solid #E38A2F;
+  }
+
+  #someicons ul {
+    width: 170px; /* Men kun over samme bredde som links ovenfor */
+  }
+
+  #someicons li {
+    width: 40px;
+    height: auto; /* Denne var vigtig for at få ikonerne til at være lige nedenunder menu links */
+  }
+
+  #someicons a {
+    width: 40px;
+    height: auto;
+  }
+
+  .someicons-background { /* Baggrund til SoMe-ikoner: hvid baggrund og orange border aka en "wrapper" */
+    width: 40px;
+    height: 40px;
+    border: 3px solid #E38A2F;
+  }
+
+  #someicons img {
+    height: 20px;
+    width: auto;
+  }
+
+  .open-this {
+    height: 12px;
+  }
+
+  .menumobil-open { /* MENU, EVENTS og OM OS, som har undermenuer (dropdowns) */
+    font-size: 14pt;
+    font-weight: 700;
+    width: 170px;
+    height: 40px;
+    border: 3px solid #E38A2F;
+  }
+
+  .mobilsubmenu { /* Undermenu (dropmenu) */
+    right: 180px; /* Placeret til højre for den overordnede li */
+  }
+
+  .mobilsubmenu a {
+    font-size: 8pt; /* Er en smule mindre i forhold til hovedpunkterne i burger menuen */
+    font-weight: 500; /* Og font weight er en smule lavere */
+    width: 150px; /* Lidt smallere end hovedpunkterne i burger menuen */
+    height: 40px;
+    border: 3px solid #E38A2F;
+  }
 }
 
 /*-----------------------Footer----------------------------------*/
@@ -399,6 +485,3 @@ footer{
   align-self: center;
   }
 }
-
-
-
