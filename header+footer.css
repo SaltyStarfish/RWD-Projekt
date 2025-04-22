@@ -324,7 +324,7 @@ nav a {
   .mobilsubmenu { /* Undermenu (dropmenu) */
     display: none; /* Skjult som standard */
     position: absolute; /* Positioneret i forhold til den overordnede li */
-    right: 260px; /* Placeret til højre for den overordnede li */
+    right: 260px; /* Placeret til venstre for den overordnede li */
     top: 0;
     z-index: 999;
   }
@@ -414,7 +414,7 @@ nav a {
   }
 
   .mobilsubmenu { /* Undermenu (dropmenu) */
-    right: 180px; /* Placeret til højre for den overordnede li */
+    right: 180px; /* Placeret til venstre for den overordnede li */
   }
 
   .mobilsubmenu a {
