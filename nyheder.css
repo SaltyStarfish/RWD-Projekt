@@ -157,3 +157,28 @@
     }
 
 }
+
+
+/*----MOBILVISNING mindre end 500px---*/
+@media screen and (max-width:500px) {
+  #nyheder-box1 {
+    flex-direction: column-reverse;
+}
+
+  #nyheder-box2 {
+    flex-direction: column;
+}
+
+  #nyheder-box3 {
+    flex-direction: column-reverse;
+}
+
+#nyheder-text1, #nyheder-text2, #nyheder-text3 {
+    padding-left: 2%;
+    padding-right: 2%;
+    max-width: 100%;
+}
+.nyheder-img { 
+    max-width: 60%;
+}
+}
