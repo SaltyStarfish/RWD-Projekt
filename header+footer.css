@@ -347,10 +347,8 @@ nav a {
 
 @media only screen and (max-width: 500px) {
 
-
   #hamburger {
-    height: 50px;
-    padding: 0.5em;
+    height: 60px;
   }
 
   #navbarmobillogo {
@@ -426,15 +424,9 @@ nav a {
     height: 40px;
     border: 3px solid #E38A2F;
   }
-}
 
-/*----MOBILVISNING mindre end 500px---*/
-@media only screen and (max-width: 500px){
   .logo_header {
     height: 30px;
-  }
-  #hamburger {
-    height: 60px;
   }
 }
 
