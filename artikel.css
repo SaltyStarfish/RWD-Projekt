@@ -61,3 +61,10 @@
       text-align: center;
     }
   }
+
+/*----MOBILVISNING mindre end 500px---*/
+  @media screen and (max-width: 500px){
+    .cirkel-float, .cirkel-float.højre{
+      float: none;
+    }
+    }
