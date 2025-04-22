@@ -185,4 +185,27 @@ a:hover {
   }
 }
 
+/*----MOBILVISNING mindre end 500px---*/
+@media only screen and (max-width: 500px) {    
+.overskrift-tekst h1 {
+  font-size: 28pt;
+}
 
+h1 {
+  font-size: 28pt;
+}
+
+h2 {
+  font-size: 25pt;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 28pt;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 25pt;
+}
+}
