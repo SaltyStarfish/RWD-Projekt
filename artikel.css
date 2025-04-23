@@ -57,7 +57,7 @@
 
  @media screen and (min-width: 769px) and (max-width: 1300px) {
     .hvid-boks {
-      margin: 30px;
+      margin: 30px auto;
       text-align: center;
     }
   }
